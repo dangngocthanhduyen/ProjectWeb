@@ -1,0 +1,567 @@
+body
+{
+
+	margin:0;
+	position: relative;
+	/*background: url(http://localhost/PHP/Login/image/background.jpg) center top /cover fixed no-repeat;*/
+	width: 100%;
+	font-family: Myriad Pro!important;
+}
+/*viewport*/
+.viewport
+{
+	position: relative;
+	padding-top: 100px;
+}
+
+
+/*taskheader*/
+
+
+.list
+{
+	top: 3%;
+}
+.bth-right
+{
+	float: right;
+}
+/*nav bar*/
+
+.navbar-dark
+{
+	background-color:#14C2FF;
+}
+
+.nav-top li
+{
+	top: 50%;
+}
+/*Add attribute for fa-bar*/
+.fa-bars
+{
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: middle;
+	content: "";
+	background: no-repeat center center;
+	background-size: 100% 100%;
+}
+ul.nav-top
+{
+
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+	position: relative;
+	top: 5;
+}
+.navbar-tg
+{
+	display: inline-block;
+}
+
+.navbar-tg:hover
+{
+	text-decoration: none;
+}
+
+.active1
+{
+	text-align: center;
+	display: inline-block;
+	padding:14px 16px;
+	color: black;
+}
+.bti-sreach
+{
+	border: 1px dotted black;
+	float: right;
+	margin-top: 12px;
+	border-radius: 34px 34px 34px 34px;
+	-moz-border-radius: 34px 34px 34px 34px;
+	-webkit-border-radius: 34px 34px 34px 34px;
+}
+.ip-sreach
+{
+	width: 90%;
+	margin-left: 3px;
+	left: 6px;
+	border: none;
+	height: 15;
+	display: inline-block;
+	outline: none;
+	box-sizing: border-box;
+	margin-top: 3px;
+	margin-bottom: 2px;
+	font-family: Helvetica, 'FontAwesome', sans-serif;
+}
+.bt-right
+{
+	margin: 0!important;
+	padding:0!important;
+}
+.bth-right
+{
+	padding: 0px!important;
+}
+/*Headddddddddddddddddddddddddddddddder*/
+.header
+{
+	background: url(image/black_transparent50.png) left top repeat white;
+	position: fixed!important;
+	z-index: 1000;
+	padding-bottom: 10px;
+	width: 100%;
+	top: 0px;
+	box-shadow:0px 2px 3px #888888;
+}
+.header ul
+{
+	list-style-type: none;
+}
+.header ul li
+{
+
+	float: left;
+	text-align: center;
+	padding-left: 15px;
+}
+.header ul li a
+{
+	color: black;
+	display: block;
+	text-align: center;
+	padding:14px 16px;
+	word-wrap:normal;
+	white-space: nowrap;
+}
+.header ul a.active
+{
+
+	background-color:#306B7F;
+}
+
+.header ul li.right
+{
+	float:right;
+}
+.header ul a:hover
+{
+	text-decoration: none;
+	border-bottom: 1px solid #109BCC;
+	color: #23527c
+}
+.header ul a:hover:not(.active)
+{
+	color: #23527c;
+	border-bottom: 1px solid #109BCC;
+}
+.header-task
+{
+	position: absolute;
+	display: inline-block;
+	padding: 0px!important;
+	padding-top: 7px;
+}
+/*Responsive Headdderrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
+
+/*@media screen and (min-width: 360px)
+{
+	.col-md-2
+	{
+		width: 13%!important;
+	}
+	}*/
+	@media screen and (min-width: 360px)
+	{
+		.col-md-9,
+		{
+			width: 10%!important;
+		}
+	}
+
+	@media screen and (max-width: 600px)
+	{
+		ul.nav-top li.right,ul.nav-top li 
+		{
+			float: none;
+			right:0;
+		}
+	}
+
+	@media screen and (min-width:753px)
+	{
+		.navbar-expand-lg,.navbar-toggler {
+			display: none;
+		}
+	}
+	@media screen and (min-width: 992px)
+	{
+		.navbar-expand-lg,.navbar-collapse {
+			display: -ms-flexbox!important;
+			display: flex!important;
+		}
+	}
+	@media screen and (max-width:375px)
+	{
+		.header a,button.navbar-toggle,div.collapse li a,ul.nav-top li.right,ul.nav-top li 
+		{
+			padding: 0;
+			margin: 0;
+		}
+
+	}
+	@media screen and (max-width:375px)
+	{
+		.collapse a.text-header
+		{
+			font-size: 1px;
+		}
+
+	}
+	/* create and option login form */
+	.navbar-toggler
+	{
+		width: 100%;
+		height: 10%;
+		background-color: black;
+		border: 1px solid;
+		outline: none;
+
+
+	}
+	.navbar-tg
+	{
+		padding:15px;
+	}
+	.login-form
+	{
+		padding: 16px;
+	}
+	.fa-bars
+	{
+		color:gray;
+	}
+	/* Tempalte form*/
+
+	.modal {
+		display: block; /* Hidden by default */
+		z-index: 1; /* Sit on top */
+		left: 0;
+		top: 0;
+		width: 100%;
+		height:100%;
+		overflow: auto; /* Enable scroll if needed */
+		padding-top: 60px;
+	}
+	/* Modal Content/Box */
+	.modal-content {
+		background-color: #fefefe;
+		border: 1px solid #888;
+		width: 25%; /* Could be more or less, depending on screen size */
+		float:right;
+	}
+	.animate {
+		-webkit-animation: animatezoom 0.6s;
+		animation: animatezoom 0.6s
+	}
+/*input[type=text], input[type=password] 
+{
+    width: 90%;
+    margin: 5 0 0 5;
+    display: inline-block;
+    outline: none;
+    box-sizing: border-box;
+    }*/
+
+    .close
+    {
+    	float:right;
+    	margin-right: 10px;
+    	color: #000;
+    	font-size: 25px;
+    	font-weight: blod;
+    }
+    .close:hover
+    {
+    	color:red;
+    }
+/*
+.avatar
+{
+	display: block;
+    margin: 0 auto 0;
+    border-radius: 50%;
+    text-align: center;
+}
+*/
+/* write style button input */
+
+.fa-user
+{
+	width: 14px;
+}
+.input-user
+{
+	display: inline-block;
+}
+.input-pass
+{
+	display: inline-block;
+}
+
+/*Button Login */
+.submit
+{
+	padding-right: 35px;
+}
+
+.fa-submit
+{
+	margin: 5px;
+	float: right;
+	background-color: white;
+	border: none;
+	font-size: 25px;
+}
+.navbar-tg
+{
+
+	margin: 0px;
+}
+@media (min-width:768px)
+{
+	.collapse{
+		display: block!important;
+	}
+}
+.carousel-control.right
+{
+	background-image: none!important;
+	width: 5%;
+}
+.carousel-control.left
+{
+	background-image: none!important;
+	width: 5%;
+}
+.carousel-indicators li {
+	position: relative;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	width: 30px;
+	height: 3px;
+	margin-right: 3px;
+	margin-left: 3px;
+	text-indent: -999px;
+	background-color: rgba(255,255,255,.5);
+}
+.carousel-indicators.actvie
+{
+	background-color: #fff;
+}
+.fa-arrow-left,.fa-arrow-right
+{
+	position: relative;
+	top: 50%;
+}
+
+/*Icon */
+.fa-home
+{
+	display: inline-block;
+	top: 3%;
+}
+.active1
+{
+	display: inline-block;
+	margin-top:3px;
+	color: black;
+}
+/*main product -------------------------------------------------*/
+.main-product
+{
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+.main
+{
+	
+}
+.row-product
+{
+	/*margin: 45% auto 0;*/
+}
+.creme
+{
+	border: 1px solid;
+}
+.lip-stick
+{
+	float: right;
+	border: 1px solid;
+}
+.main-title
+{
+	padding-bottom: 15;
+	text-align: center;
+}
+/*sequense ---------------------------------------------------*/
+.sequense
+{
+	position: relative;
+	display: block;
+	padding-bottom: 50px;
+}
+.event-product
+{
+	/*border: 1px solid black;*/
+	padding: 0px!important;
+	display: inline-block;
+}
+.item li
+{
+	list-style-type: none;
+}
+.event-icon
+{
+	width: 55px;
+	position: absolute;
+	transform: rotate(333deg);
+	color: #3DE4FF;
+	border: 1px solid;
+	margin-top: 5px;
+	margin-left: 1px;
+	font-size: medium;
+	text-align: center;
+	border-radius: 0px 0px 118px 27px;
+
+}
+/*List my phẩm ----------------------------------------------- */
+
+.new-arival
+{
+
+}
+.table-list
+{
+	padding-top: 10px;
+}
+.li-col
+{
+	list-style-type: none;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 22px;
+	margin-top: 22px;
+}
+
+ul
+{
+	margin: 0;
+	padding: 0;
+}
+.bt-more
+{
+	padding: 3px;
+	margin-bottom: 5px;
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+	border: 1px solid grey;
+}
+.fa-arrow-right
+{
+	padding-bottom: 15px;
+}
+.div-col
+{
+	display: block;
+	opacity: 0;
+}
+.img-list
+{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.button-more
+{
+	text-align: center;
+	padding-top: 15px;
+}
+.bt-see-all
+{
+	border: 1px solid #F7A08F;
+	color: white;
+	padding: 5px;
+	background-color: #F7A08F;
+}
+.bt-see-all:hover
+{
+	text-decoration: none;
+	-webkit-box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
+	-moz-box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
+	box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
+}
+/* Responsive List product */
+.bt-details
+{
+	float: left;
+}
+.bt-search
+{
+	top: 50%;
+	/* margin: auto; */
+	left: 50%;
+	position: absolute;
+}
+.fa-search
+{
+	text-align: center;
+}
+/*@media (min-width: 1200px)
+{
+	.div-col
+	{
+		height: 35%
+	}
+}
+@media (min-width: 992px)
+{
+	.div-col
+	{
+		height: 70%
+	}
+}
+@media (min-width: 768px)
+{
+	.div-col
+	{
+		height: 100%
+	}
+	}*/
+	.hidden-div-col
+	{
+		position: relative;
+		background:black;
+	}
+	.product-list
+	{
+		width: 95%;
+		position: absolute;
+		height: 100%;
+		opacity: 0;
+	}
+	/* hover list-product */
+	.product-list:hover
+	{
+		opacity: 2;
+		z-index: 100;
+	}
+	.picture-product:hover
+	{
+		opacity: 0.5;
+	}
+
