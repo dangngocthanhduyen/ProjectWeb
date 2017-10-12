@@ -8,7 +8,12 @@ body
 }
 .Logo2minHeader
 {
-	padding: 0 0 0 10px;
+	padding: 0 25px 0 10px;
+}
+.TextLogo
+{
+    padding-right: 80px;
+    padding-left: 20px;
 }
 .bg-dark 
 {
@@ -43,8 +48,8 @@ body
 }
 .navbar-expand-md .navbar-nav .nav-link 
 {
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 .navbar-expand-md .navbar-nav 
 {
@@ -54,9 +59,9 @@ body
 {
     margin-right: auto!important;
 }
-.navbar-nav 
-{
+.navbar-nav {
     display: flex;
+    padding-left: 150px !important;
     margin-bottom: 0;
     list-style: none;
 }
@@ -172,10 +177,15 @@ button
 .nav-link
 {
 	color: #F7A08F;
-	font-weight: 500;
-	font-size: larger;
+	font-weight: 700;
+	font-size: 20px;
 }
-
+.nav-link:hover
+{
+    color: #F7A08F;
+    font-weight: 700;
+    font-size: 25px;
+}
 #img
 {
     width: 100%;
@@ -294,7 +304,15 @@ ul, ol, li {
 {
     display: block;
     overflow: hidden;
-    height: 32px;
+    margin: 10px;
+    line-height: 16px;
+    font-size: 13px;
+    color: #222222;
+}
+.ProductListWrap .BodyProductList .ProductList ul li .price
+{
+    display: block;
+    overflow: hidden;
     margin: 10px;
     line-height: 16px;
     font-size: 13px;
