@@ -1,0 +1,402 @@
+body
+{
+    margin: 0;
+    font-size: 15px;
+    color: #222222;
+    display: inline;
+    font-family: Arial;
+}
+.Logo2minHeader
+{
+	padding: 0 25px 0 10px;
+}
+.TextLogo
+{
+    padding-right: 80px;
+    padding-left: 20px;
+}
+.bg-dark 
+{
+    background-color: #f0f0f1!important;
+}
+.fixed-top 
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar 
+{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+.navbar-expand-md .navbar-toggler 
+{
+    display: none;
+}
+.navbar-expand-md .navbar-collapse 
+{
+    display: flex!important;
+}
+.navbar-collapse 
+{
+    flex-basis: 100%;
+    align-items: center;
+}
+.navbar-expand-md .navbar-nav .nav-link 
+{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.navbar-expand-md .navbar-nav 
+{
+    flex-direction: row;
+}
+.mr-auto 
+{
+    margin-right: auto!important;
+}
+.navbar-nav {
+    display: flex;
+    padding-left: 150px !important;
+    margin-bottom: 0;
+    list-style: none;
+}
+.sr-only 
+{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+    border: 0;
+}
+ul 
+{
+    margin-top: 0;
+ }
+.form-inline .form-control 
+{
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+.mr-sm-2 
+{
+    margin-right: .5rem!important;
+}
+.form-control 
+{
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #F7A08F;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+input, button
+{
+    margin: 0;
+    font-family: inherit;
+}
+.btn-outline-success 
+{
+    color: #fff;
+    background-color: #F7A08F;
+    background-image: none;
+}
+.btn-outline-success:hover 
+{
+    color: #fff;
+    background-color: #F7A08F;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+}
+button
+{
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    font: 13.3333px Arial;
+    -webkit-writing-mode: horizontal-tb;
+}
+.my-sm-0 
+{
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+}
+.btn 
+{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: .25rem;
+    transition: all .15s ease-in-out;
+}
+
+
+.navbar-collapse
+{
+	flex-basis: 100%;
+    align-items: center;
+    display: flex!important;
+}
+.ml-auto 
+{
+    margin-left: auto!important;
+}
+
+.navbar-nav 
+{
+	flex-direction: row;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav-link
+{
+	color: #F7A08F;
+	font-weight: 700;
+	font-size: 20px;
+}
+.nav-link:hover
+{
+    color: #F7A08F;
+    font-weight: 700;
+    font-size: 25px;
+}
+#img
+{
+    width: 100%;
+}
+.LinkHome
+{
+    padding: 0 0 0 20px;
+}
+.LinkDuongda
+{
+    font-weight: bold;
+}
+.HeadBackground 
+{
+    height: 540px;
+    background-size: cover !important;
+}
+.HeadBackground h2 
+{
+    text-align: center;
+    line-height: 540px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #222222;
+}
+a:link 
+{
+    text-decoration: none;
+}
+a {
+    cursor: pointer;
+    color: #666666;
+}
+.Location
+{
+	margin-top: 13px;
+}
+#content
+{
+    width: 100%;
+    min-height: 800px;
+
+}
+#content .ContentCenter 
+{
+    max-width: 1300px;
+    margin: 20px;
+}
+ul, ol, li {
+    list-style: none;
+    line-height: 35px;
+}
+.ListTitle
+{
+    font-weight: bold;
+    color: #222222;
+}
+.HeadList 
+{
+	padding-left: 20px;
+	font-weight: bold;
+    color: #222222;
+    font-size: 25px;
+}
+.ProductListWrap 
+{
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+
+.ProductListWrap .BodyProductList 
+{
+    overflow: hidden;
+    padding-left: 40px;
+}
+.ProductListWrap .BodyProductList .ResultSort 
+{
+    overflow: hidden;
+}
+.ProductListWrap .BodyProductList .ResultSort .ResultNum 
+{
+    float: left;
+    line-height: 34px;
+    font-size: 13px;
+    color: #666666;
+}
+
+.ProductListWrap .BodyProductList .ResultSort .Sort 
+{
+    float: right;
+}
+.ProductListWrap .BodyProductList .ResultSort .Sort .Select 
+{
+    width: 175px;
+    height: 34px;
+    font-size: 13px;
+    color: #666666;
+    border: 1px solid #222222;
+}
+.ProductListWrap .LeftProductList 
+{
+    float: left;
+    width: 280px;
+}
+
+.ProductListWrap .BodyProductList .ProductList ul li a 
+{
+    display: block;
+    margin-right: 40px;
+}
+.ProductListWrap .BodyProductList .ProductList ul li .thumb 
+{
+    display: block;
+}
+.ProductListWrap .BodyProductList .ProductList ul li .desc 
+{
+    display: block;
+    overflow: hidden;
+    margin: 10px;
+    line-height: 16px;
+    font-size: 13px;
+    color: #222222;
+}
+.ProductListWrap .BodyProductList .ProductList ul li .price
+{
+    display: block;
+    overflow: hidden;
+    margin: 10px;
+    line-height: 16px;
+    font-size: 13px;
+    color: #222222;
+}
+.ProductListWrap .BodyProductList .ProductList ul li 
+{
+    float: left;
+    width: 33.3%;
+    margin-top: 20px;
+    text-align: center;
+}
+.ProductListWrap .BodyProductList .ProductList ul li .thumb img 
+{
+    width: 100%;
+}
+img 
+{
+    max-width: 100%;
+    border: 0;
+    vertical-align: middle;
+}
+
+.list-pager 
+{
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: right;
+}
+.ChangePage
+{
+	text-align: center;
+}
+.ChangePage ul 
+{
+    list-style: none;
+}
+.ChangePage ul li {
+    display: inline-block; 
+}
+.ChangePage ul li .current {
+    background: #F7A08F;
+    color: #fff;
+}
+.ChangePage ul li .normal {
+    background: #f7f7f7;
+    color: #333;
+    text-decoration: none;
+}
+.ChangePage a
+{
+
+    display: inline-block; 
+	margin: 0 5px;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#footer
+{
+    width: 100%;
+    min-height: 40px;
+	border-top: 1px solid #e5e5e5;
+	margin-top: 20px;
+}
+
+.Logo2minFooter
+{
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+	margin-top: 30px;
+}
+.TextFooter
+{
+	display: block;
+	text-align: center;
+}
+.logofb_insta
+{
+	text-align:center;
+	margin-bottom:10px;
+}
