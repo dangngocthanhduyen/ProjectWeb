@@ -11,7 +11,7 @@ body
 .viewport
 {
 	position: relative;
-	padding-top: 90px;
+	padding-top: 40px;
 }
 
 
@@ -28,7 +28,15 @@ body
 	float: right;
 }
 /*nav bar*/
+a
+{
+	font: normal normal normal 17px/1 FontAwesome;
+}
+a:hover
 
+{
+	text-decoration: none!important;
+}
 .navbar-dark
 {
 	background-color:#FFFFFF;
@@ -371,6 +379,10 @@ ul.nav-top
 		display: block!important;
 	}
 }
+.carousel
+{
+	padding-top: 10px;
+}
 .carousel-control.right
 {
 	background-image: none!important;
@@ -415,6 +427,7 @@ ul.nav-top
 	
 	padding-top: 30px;
 	padding-bottom: 50px;
+
 }
 .main
 {
@@ -429,27 +442,42 @@ ul.nav-top
 }
 .creme
 {
-	border: 1px solid;
+	border: 1px solid #F7A08F;
+	float: left;
+	margin-left: 15%;
 }
 .lip-stick
 {
 	float: right;
-	border: 1px solid;
+	border: 1px solid #F7A08F;
+	margin-right: 15%;
 }
 .main-title
 {
 	padding-bottom: 15;
 	text-align: center;
 }
+.product-b
+{
+	border-top: 1px solid #F7A08F;
+}
 /*sequense ---------------------------------------------------*/
+.img-responsive
+{
+	text-align: center;
+}
 .sequense
 {
 	position: relative;
 	display: block;
 	padding-bottom: 50px;
 	padding-top: 50px;
-	background: linear-gradient(to bottom,rgba(163,96,255,0.85) 0%,rgba(0,132,255,0.85) 100%);
+	/*background: linear-gradient(to bottom,rgba(163,96,255,0.85) 0%,rgba(0,132,255,0.85) 100%);*/
 	opacity: 0,5;
+}
+.title-product
+{
+	border-top: 1px solid #F7A08F;
 }
 .event-product
 {
@@ -476,7 +504,18 @@ ul.nav-top
 
 }
 /*List my phẩm ----------------------------------------------- */
-
+.text-tille
+{
+	text-align: center;
+	padding: 3px;
+	color: black;
+	font:normal normal normal 22px/1 FontAwesome;
+}
+.text-bold
+{
+	font-weight: bold;
+	margin-top: 10px;
+}
 .new-arival
 {
 
@@ -526,6 +565,7 @@ ul
 {
 	text-align: center;
 	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .bt-see-all
 {
@@ -537,6 +577,9 @@ ul
 .bt-see-all:hover
 {
 	text-decoration: none;
+	border-radius: 34px 34px 34px 34px;
+	-moz-border-radius: 34px 34px 34px 34px;
+	-webkit-border-radius: 34px 34px 34px 34px;
 	-webkit-box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
 	-moz-box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
 	box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
