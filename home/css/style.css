@@ -31,7 +31,7 @@ body
 
 .navbar-dark
 {
-	background-color:#14C2FF;
+	background-color:#FFFFFF;
 }
 
 .nav-top li
@@ -77,9 +77,10 @@ ul.nav-top
 }*/
 .bti-search
 {
-	border: 1px dotted black;
+	border: 1px dotted #F7A08F;
 	float: right;
 	margin-top: 8px;
+	margin-right: 10%;
 	border-radius: 34px 34px 34px 34px;
 	-moz-border-radius: 34px 34px 34px 34px;
 	-webkit-border-radius: 34px 34px 34px 34px;
@@ -115,13 +116,16 @@ ul.nav-top
 }
 .header
 {
-	background: linear-gradient(to bottom,rgba(163,96,255,0.85) 0%,rgba(0,132,255,0.85) 100%);
+	/*background: linear-gradient(to bottom,rgba(163,96,255,0.85) 0%,rgba(0,132,255,0.85) 100%);*/
     box-shadow: 0 0 0 1px rgba(255,255,255,0.1);
 	position: fixed!important;
 	z-index: 1000;
-	padding-bottom: 10px;
 	width: 100%;
 	top: 0px;
+	-webkit-box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
+	-moz-box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
+	box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
+}
 }
 .header ul
 {
@@ -131,17 +135,19 @@ ul.nav-top
 {
 
 	float: left;
+	padding-right:20px; 
 	text-align: center;
 }
 .header ul li a
 {
-	color: black;
+	color: #F7A08F;
 	display: block;
 	text-align: center;
 	padding:10px 13px;
 	word-wrap:normal;
 	white-space: nowrap;
-	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 20px;
+	font: normal normal normal 17px/1 FontAwesome;
 }
 
 
@@ -152,20 +158,29 @@ ul.nav-top
 .header ul li a:hover
 {
 	text-decoration: none;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid #F7A08F;
 	border-radius: 50px;
+	background-color:#F7A08F; 
 	color:white;
+
 }
 .header ul li a.active
 {
-	border: 1px solid white;
+	border: 1px solid #F7A08F;
 	border-radius: 50px;
+	background-color:#F7A08F; 
 	color:white;
+	-webkit-box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
+	-moz-box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
+	box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
 }
 .header ul li a:hover:not(.active)
 {
-	border: 1px solid white;
+	border: 1px solid #F7A08F;
 	color:white;
+	-webkit-box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
+	-moz-box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
+	box-shadow: 1px 3px 5px 0px rgba(145,142,145,1);
 }
 .header-task
 {
