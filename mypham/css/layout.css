@@ -39,10 +39,8 @@ img.card-img-top.img-fluid {
 }
 .nen{
     background-image: url("../images/mypham.jpg");
-    background-size: 1348px 409px;
-    -webkit-background-size: 1348px 409px;
-    -moz-background-size: 1348px 409px;
+    background-size: 100% 419px;
     background-repeat: no-repeat;
-    height: 409px;
-    margin-top: -22px;
+    height: 423px;
+    margin-top: 51px;
 }
