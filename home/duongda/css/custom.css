@@ -6,6 +6,14 @@ body
     display: inline;
     font-family: Arial;
 }
+ul
+{
+     line-height: 0!important;
+}
+ul .nav-top 
+{
+    line-height: 0!important;
+}
 /*.Logo2minHeader
 {
 	padding: 0 25px 0 10px;
@@ -185,21 +193,21 @@ button
     color: #F7A08F;
     font-weight: 700;
     font-size: 25px;
-}*/
-/*viewport*/
-.viewport
-{
-    position: relative;
-    padding-top: 40px;
-}
+    }*/
+    /*viewport*/
+    .viewport
+    {
+        position: relative;
+        padding-top: 40px;
+    }
 
 
-/*taskheader*/
-
+    /*taskheader*/
 
 .list-header
 {
-    padding:15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .bth-right
@@ -266,12 +274,13 @@ ul.nav-top
     {
         border: 1px dotted #F7A08F;
         float: right;
+        margin-top: 3px;
         margin-right: 10%;
         padding: 3px;
+        font-size: 14px;
         border-radius: 34px 34px 34px 34px;
         -moz-border-radius: 34px 34px 34px 34px;
         -webkit-border-radius: 34px 34px 34px 34px;
-        font-size: 16px;
     }
     .ip-search
     {
@@ -300,6 +309,7 @@ ul.nav-top
     .logo-header
     {
         display: inline-block;
+        padding-top: 10px;
     }
     .header
     {
@@ -781,7 +791,7 @@ img
 {
 
     display: inline-block; 
-	margin: 0 5px;
+    margin: 0 5px;
     border-radius: 50%;
     width: 27px;
     height: 27px;
@@ -794,8 +804,8 @@ img
 {
     width: 100%;
     min-height: 40px;
-	border-top: 1px solid #e5e5e5;
-	margin-top: 20px;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 20px;
 }
 
 .Logo2minFooter
@@ -814,4 +824,30 @@ img
 {
 	text-align:center;
 	margin-bottom:10px;
+}
+.bti-search
+{
+    border: 1px dotted #F7A08F;
+    float: right;
+    margin-top: 3px;
+    margin-right: 10%;
+    padding: 3px;
+    font-size: 14px;
+    border-radius: 34px 34px 34px 34px;
+    -moz-border-radius: 34px 34px 34px 34px;
+    -webkit-border-radius: 34px 34px 34px 34px;
+}
+.ip-search
+{
+    width: 90%;
+    margin-left: 8px;
+    border: none;
+    display: inline-block;
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    color: black;
+    background: transparent;
+    font-family: Helvetica, 'FontAwesome', sans-serif;
 }

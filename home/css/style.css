@@ -21,6 +21,7 @@ body
 .list-header
 {
 	padding-bottom: 10px;
+	padding-top: 5px;
 }
 
 .bth-right
@@ -87,9 +88,10 @@ ul.nav-top
 	{
 		border: 1px dotted #F7A08F;
 		float: right;
-		margin-top: 8px;
+		margin-top: 3px;
 		margin-right: 10%;
 		padding: 3px;
+		font-size: 14px;
 		border-radius: 34px 34px 34px 34px;
 		-moz-border-radius: 34px 34px 34px 34px;
 		-webkit-border-radius: 34px 34px 34px 34px;
@@ -99,7 +101,6 @@ ul.nav-top
 		width: 90%;
 		margin-left: 8px;
 		border: none;
-		height: 13px;
 		display: inline-block;
 		outline: none;
 		box-sizing: border-box;
@@ -426,7 +427,8 @@ ul.nav-top
 /*main product -------------------------------------------------*/
 .main-product
 {
-
+	padding-top: 30px;
+    padding-bottom: 30px;
 }
 .main
 {
@@ -461,7 +463,19 @@ ul.nav-top
 .product-b
 {
 	border-top: 1px solid #F7A08F;
-	margin-top: 25px;
+}
+/*hover san phẩm chính */
+.lip-stick:hover
+{
+	background-image: url(../image/banner/lipstick-icon1.jpg) no-repeat;
+	width: 300px;
+    height: 300px;
+}
+.creme:hover
+{
+	background: url(../image/banner/creme-icon1.jpg) no-repeat;
+	width: 300px;
+    height: 300px;
 }
 /*sequense ---------------------------------------------------*/
 .img-responsive
@@ -481,8 +495,8 @@ ul.nav-top
 {
 	position: relative;
 	display: block;
-	padding-bottom: 50px;
-	padding-top: 25px;
+	padding-bottom: 30px;
+	padding-top: 30px;
 	/*background: linear-gradient(to bottom,rgba(163,96,255,0.85) 0%,rgba(0,132,255,0.85) 100%);*/
 	opacity: 0,5;
 }
@@ -507,6 +521,7 @@ ul.nav-top
 {
 	width: 55px;
     position: absolute;
+    border-radius: 10px;
     /* transform: rotate(333deg); */
     right: 20%;
     top: 4%;
@@ -536,6 +551,8 @@ ul.nav-top
 .new-arival
 {
 	padding-bottom: 30px;
+	 padding-top: 30px;
+
 }
 .best-list
 {
@@ -598,6 +615,7 @@ ul
 	color: white;
 	padding: 5px;
 	background-color: #F7A08F;
+	border-radius: 34%;
 }
 .bt-see-all:hover
 {
@@ -619,7 +637,7 @@ ul
 	position: absolute;
 	margin: auto;
 	width: 89%;
-	height: 80%;
+	height: 85%;
 	background: rgba(45,55,69,0.75);
 }
 .picture-product
@@ -665,6 +683,21 @@ ul
 {
 	text-align: center;
 	top: 50%;
+	font-size: 30px!important;
+	color: white;
+}
+.fa-heart
+{
+	text-align: center;
+	top: 50%;
+	font-size: 30px!important;
+	color: white;
+}
+.fa-instagram
+{
+	text-align: center;
+	top: 50%;
+	font-size: 30px!important;
 	color: white;
 }
 

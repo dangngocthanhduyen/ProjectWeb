@@ -186,10 +186,10 @@ button
 
 /*taskheader*/
 
-
 .list-header
 {
-    padding:15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .bth-right
@@ -226,7 +226,19 @@ a:hover
     background: no-repeat center center;
     background-size: 100% 100%;
 }
-ul.nav-top
+.nav-top ul
+{
+    line-height: 0!important;
+}
+ul
+{
+     line-height: 0!important;
+}
+ul .nav-top 
+{
+    line-height: 0!important;
+}
+ul .nav-top
 {
 
     list-style-type: none;
@@ -234,6 +246,7 @@ ul.nav-top
     padding:0px;
     position: relative;
     top: 5;
+    line-height: 0!important;
 }
 .navbar-tg
 {
@@ -256,12 +269,13 @@ ul.nav-top
     {
         border: 1px dotted #F7A08F;
         float: right;
+        margin-top: 3px;
         margin-right: 10%;
         padding: 3px;
+        font-size: 14px;
         border-radius: 34px 34px 34px 34px;
         -moz-border-radius: 34px 34px 34px 34px;
         -webkit-border-radius: 34px 34px 34px 34px;
-        font-size: 16px;
     }
     .ip-search
     {
@@ -290,6 +304,7 @@ ul.nav-top
     .logo-header
     {
         display: inline-block;
+        padding-top: 10px;
     }
     .header
     {
