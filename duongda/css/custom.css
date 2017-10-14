@@ -720,8 +720,8 @@ ul, ol, li {
     display: block;
     overflow: hidden;
     margin: 10px;
-    line-height: 16px;
-    font-size: 13px;
+    line-height: 18px;
+    font-size: 15px;
     color: #222222;
 }
 .ProductListWrap .BodyProductList .ProductList ul li .price
