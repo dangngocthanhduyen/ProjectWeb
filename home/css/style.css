@@ -20,7 +20,7 @@ body
 
 .list-header
 {
-	padding:15px;
+	padding-bottom: 10px;
 }
 
 .bth-right
@@ -122,6 +122,7 @@ ul.nav-top
 	.logo-header
 	{
 		display: inline-block;
+		padding-top: 10px;
 	}
 	.header
 	{
@@ -425,9 +426,6 @@ ul.nav-top
 /*main product -------------------------------------------------*/
 .main-product
 {
-	
-	padding-top: 30px;
-	padding-bottom: 50px;
 
 }
 .main
@@ -445,13 +443,15 @@ ul.nav-top
 {
 	border: 1px solid #F7A08F;
 	float: left;
-	margin-left: 15%;
+	width: 300px;
+    height: 300px;
 }
 .lip-stick
 {
 	float: right;
 	border: 1px solid #F7A08F;
-	margin-right: 15%;
+	width: 300px;
+    height: 300px;
 }
 .main-title
 {
@@ -461,6 +461,7 @@ ul.nav-top
 .product-b
 {
 	border-top: 1px solid #F7A08F;
+	margin-top: 25px;
 }
 /*sequense ---------------------------------------------------*/
 .img-responsive
@@ -471,14 +472,26 @@ ul.nav-top
 {
 	position: relative;
 	display: block;
-	padding-bottom: 50px;
+	padding-bottom: 35px;
 	padding-top: 50px;
 	/*background: linear-gradient(to bottom,rgba(163,96,255,0.85) 0%,rgba(0,132,255,0.85) 100%);*/
 	opacity: 0,5;
 }
+.sales-off
+{
+	position: relative;
+	display: block;
+	padding-bottom: 50px;
+	padding-top: 25px;
+	/*background: linear-gradient(to bottom,rgba(163,96,255,0.85) 0%,rgba(0,132,255,0.85) 100%);*/
+	opacity: 0,5;
+}
+
 .title-product
 {
+	padding-top: 15px;
 	border-top: 1px solid #F7A08F;
+	padding-bottom: 15px;
 }
 .event-product
 {
@@ -493,15 +506,18 @@ ul.nav-top
 .event-icon
 {
 	width: 55px;
-	position: absolute;
-	transform: rotate(333deg);
-	color: #3DE4FF;
-	border: 1px solid;
-	margin-top: 5px;
-	margin-left: 1px;
-	font-size: medium;
-	text-align: center;
-	border-radius: 0px 0px 118px 27px;
+    position: absolute;
+    /* transform: rotate(333deg); */
+    right: 20%;
+    top: 4%;
+    color: white;
+    background-color: #F7A08F;
+    border: 1px solid;
+    /* margin-top: 5px; */
+    /* margin-left: 1px; */
+    font-size: medium;
+    text-align: center;
+    /* border-radius: 0px 0px 118px 27px; */
 
 }
 /*List my phẩm ----------------------------------------------- */
@@ -519,7 +535,15 @@ ul.nav-top
 }
 .new-arival
 {
-
+	padding-bottom: 30px;
+}
+.best-list
+{
+	padding-bottom: 30px;
+}
+.ins-list
+{
+	padding-bottom: 30px;
 }
 .table-list
 {
@@ -614,9 +638,10 @@ ul
 }
 .product-detail
 {
--webkit-box-shadow: 1px -2px 5px -2px rgba(0,0,0,0.75);
--moz-box-shadow: 1px -2px 5px -2px rgba(0,0,0,0.75);
-box-shadow: 1px -2px 5px -2px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 1px -2px 5px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px -2px 5px -2px rgba(0,0,0,0.75);
+	box-shadow: 1px -2px 5px -2px rgba(0,0,0,0.75);
+	font-family: arial;
 
 }
 
@@ -686,6 +711,6 @@ box-shadow: 1px -2px 5px -2px rgba(0,0,0,0.75);
 }
 .footer
 {
-border-top:1px solid #F7A08F;
+	border-top:1px solid #F7A08F;
 
 }
