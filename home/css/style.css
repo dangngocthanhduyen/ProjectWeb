@@ -791,16 +791,19 @@ ul
 .quick-set
 {
 	border: 1px solid;
-    width: 50%;
+    width: 75%;
+    height: 65%;
     text-align: center;
     margin: auto auto;
     background: white;
 }
 .image
 {
-
+	margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 15;
 }
-.contain
+.modal-contain
 {
 	
 }
