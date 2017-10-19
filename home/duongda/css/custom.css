@@ -646,12 +646,12 @@ a:link
 }
 #content .ContentCenter 
 {
-    max-width: 1300px;
     margin: 20px;
 }
 ul, ol, li {
     list-style: none;
     line-height: 19px;
+    padding: 0px;
 }
 .ListTitle
 {
@@ -674,7 +674,7 @@ ul, ol, li {
 .ProductListWrap .BodyProductList 
 {
     overflow: hidden;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 .ProductListWrap .BodyProductList .ResultSort 
 {
@@ -703,13 +703,13 @@ ul, ol, li {
 .ProductListWrap .LeftProductList 
 {
     float: left;
-    width: 280px;
+    white-space: nowrap;
+
 }
 
 .ProductListWrap .BodyProductList .ProductList ul li a 
 {
     display: block;
-    margin-right: 40px;
 }
 .ProductListWrap .BodyProductList .ProductList ul li .thumb 
 {
@@ -736,7 +736,6 @@ ul, ol, li {
 .ProductListWrap .BodyProductList .ProductList ul li 
 {
     float: left;
-    width: 33.3%;
     margin-top: 20px;
     text-align: center;
 }
@@ -814,4 +813,9 @@ img
 {
 	text-align:center;
 	margin-bottom:10px;
+}
+.row-fix
+{
+    padding-right:0px!important;
+    padding-left:0px!important;
 }
