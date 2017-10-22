@@ -8,36 +8,7 @@
   <link rel="stylesheet" type="text/css"  href="css/font-awesome.css">
 </head>
 <body>
-  <!-- HEADER 
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a href="#">
-      <img class="Logo2minHeader" src="img/logoheader.png" width="50px" height="50px">
-    </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a id="webtittle" class="nav-link abc" href="#">HOME<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">MỸ PHẨM</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">DƯỠNG DA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">CONTACT</a>
-          </li>
-        </ul>
-        <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-  -->
+  
   <!-- NEW HEADER -->
   <div class="viewport">
     <div class="navbar navbar-dark bg-dark header">
@@ -83,7 +54,7 @@
   </div>
 </div>  
 </div>
-<div class="clearfix">
+<div class="container-fluid clearfix">
   <!-- IMAGE -->
   <div class="HeadBackground" style="background:url(img/trangdiem.jpg) no-repeat center top;">
     <h2>Trang điểm</h2>
@@ -91,7 +62,8 @@
 
 
   <!-- CONTENT -->
-  <div id='content'>
+  <div class='container'>
+  <div class='content'>
     <div class="ContentCenter">
       <div class="Location">
         <a class='LinkHome' href="#">Home > </a>
@@ -99,7 +71,9 @@
       </div>
 
       <div class="ProductListWrap">
-        <div class="LeftProductList">
+        <div class="#">
+        <div class="col-md-2 row-fix">
+          <div class="LeftProductList">
           <h3><a class="HeadList" href="#" >Trang điểm</a></h3>
           <ul class="List">
 
@@ -137,8 +111,7 @@
                 </li>
 
                 <li>
-                  <a href="#">Innisfree Always New Auto
-                  Liner Pencel (3)</a>
+                  <a href="#">Liner Pencel (3)</a>
                 </li>
 
                 <li>
@@ -167,7 +140,7 @@
                 </li>
 
                 <li>
-                  <a href="#">Skinfood Fresh Fruit Lip Cheek Trio (4)</a>
+                  <a href="#">Skinfood Fresh Fruit Lip(4)</a>
                 </li>
 
                 <li>
@@ -179,12 +152,15 @@
 
           </ul>
         </div>
+      </div>
 
-        <div class="BodyProductList">
+
+        <div class="BodyProductList col-sm-12 col-md-9">
+
           <div class="ResultSort">
-            <p class="ResultNum"><strong>51</strong> Kết quả</p>
+            <p class="ResultNum col-sm-6 col-md-6"><strong>51</strong> Kết quả</p>
 
-            <div class="Sort">
+            <div class="Sort col-sm-6 col-md-3">
               <select class="Select" onchange="fnSort(this.value);">
                 <option value="1" selected="">Tìm kiếm mới</option>
                 <option value="2">Sản phẩm hot</option>
@@ -195,114 +171,145 @@
           </div>
 
           <div class="ProductList">
-            <ul>
-              <li >
+
+            
+              <div class="row">
+                <div class="card col-sm-12 col-md-4">
                 <a href="#">
                   <div class="thumb">
-                    <img class="thumbnail" src="img/producttrangdiem/1.jpg">
-                  </div>
-                  <p class="desc">Dear Darling Tint</p>
-                  <p class="price">101.000VND</p>
-                </a>
-              </li>
+                    <img class="thumbnail img-responsive img-fluid" src="img/producttrangdiem/1.jpg">
 
-              <li >
+                  </div>
+                  <div class="desc">Dear Darling Tint</div>
+                  <div class="price">101.000VND</div>
+                </a>
+              </div>
+
+
+            <div class="card col-sm-12 col-md-4">
                 <a href="#">
                   <div class="thumb">
-                    <img class="thumbnail" src="img/producttrangdiem/2.jpg">
-                  </div>
-                  <p class="desc">Peripera SPF 50++</p>
-                  <p class="price">199.000VND</p>
-                </a>
-              </li>
+                    <img class="thumbnail img-responsive img-fluid" src="img/producttrangdiem/2.jpg">
 
-              <li >
+                  </div>
+                  <div class="desc">Peripera SPF 50++</div>
+                  <div class="price">199.000VND</div>
+                </a>
+             </div>
+
+
+              <div class="card col-sm-12 col-md-4">
                 <a href="#">
                   <div class="thumb">
-                    <img class="thumbnail" src="img/producttrangdiem/3.jpg">
-                  </div>
-                  <p class="desc">Ink cushion</p>
-                  <p class="price">120.000VND</p>
-                </a>
-              </li>
+                    <img class="thumbnail img-responsive img-fluid" src="img/producttrangdiem/3.jpg">
 
-              <li >
+                  </div>
+                  <div class="desc">Ink cushion</div>
+                  <div class="price">120.000VND</div>
+                </a>
+              </div>
+             </div>
+
+
+             <div class="row">
+              <div class="card col-sm-12 col-md-4">
                 <a href="#">
                   <div class="thumb">
-                    <img class="thumbnail" src="img/producttrangdiem/4.jpg">
-                  </div>
-                  <p class="desc">A'peiu Wonder Tension</p>
-                  <p class="price">250.000VND</p>
-                </a>
-              </li>
+                    <img class="thumbnail img-responsive img-fluid" src="img/producttrangdiem/4.jpg">
 
-              <li >
+                  </div>
+                  <div class="desc">A'peiu Wonder Tension</div>
+                  <div class="price">250.000VND</div>
+                </a>
+             </div>
+
+
+             <div class="card col-sm-12 col-md-4">
                 <a href="#">
                   <div class="thumb">
-                    <img class="thumbnail" src="img/producttrangdiem/5.jpg">
-                  </div>
-                  <p class="desc">Rice Concealer Tip</p>
-                  <p class="price">179.000VND</p>
-                </a>
-              </li>
+                    <img class="thumbnail img-responsive img-fluid" src="img/producttrangdiem/5.jpg">
 
-              <li >
+                  </div>
+                  <div class="desc">Rice Concealer Tip</div>
+                  <div class="price">179.000VND</div>
+                </a>
+             </div>
+
+
+              <div class="card col-sm-12 col-md-4">
                 <a href="#">
                   <div class="thumb">
-                    <img class="thumbnail" src="img/producttrangdiem/6.jpg">
-                  </div>
-                  <p class="desc">Innisfree Concealer</p>
-                  <p class="price">169.000VND</p>
-                </a>
-              </li>
+                    <img class="thumbnail img-responsive img-fluid" src="img/producttrangdiem/6.jpg">
 
-              <li >
+                  </div>
+                  <div class="desc">Innisfree Concealer</div>
+                  <div class="price">169.000VND</div>
+                </a>
+              </div>
+             </div>
+
+
+            <div class="row">
+              <div class="card col-sm-12 col-md-4">
                 <a href="#">
                   <div class="thumb">
-                    <img class="thumbnail" src="img/producttrangdiem/7.jpg">
-                  </div>
-                  <p class="desc">Innisfree Always New Auto Liner Pencel</p>
-                  <p class="price">192.000VND</p>
-                </a>
-              </li>
+                    <img class="thumbnail img-responsive img-fluid" src="img/producttrangdiem/7.jpg">
 
-              <li >
+                  </div>
+                  <div class="desc">Innisfree Always New Auto Liner Pencel</div>
+                  <div class="price">192.000VND</div>
+                </a>
+              </div>
+
+
+             <div class="card col-sm-12 col-md-4">
                 <a href="#">
                   <div class="thumb">
-                    <img class="thumbnail" src="img/producttrangdiem/8.jpg">
-                  </div>
-                  <p class="desc">Moart Velvet Lipstick</p>
-                  <p class="price">259.000VND</p>
-                </a>
-              </li>
+                    <img class="thumbnail img-responsive img-fluid" src="img/producttrangdiem/8.jpg">
 
-              <li >
+                  </div>
+                  <div class="desc">Moart Velvet Lipstick</div>
+                  <div class="price">259.000VND</div>
+                </a>
+             </div> 
+
+
+              <div class="card col-sm-12 col-md-4">
                 <a href="#">
                   <div class="thumb">
-                    <img class="thumbnail" src="img/producttrangdiem/9.jpg">
-                  </div>
-                  <p class="desc">Skinfood Fresh Fruit Lip Cheek</p>
-                  <p class="price">299.000VND</p>
-                </a>
-              </li>
+                    <img class="thumbnail img-responsive img-fluid" src="img/producttrangdiem/9.jpg">
 
-            </ul>
+                  </div>
+                  <div class="desc">Skinfood Fresh Fruit Lip Cheek</div>
+                  <div class="price">299.000VND</div>
+                </a>
+
+              </div>
+            </div>
+           
           </div>
 
           
 
-        </div>
+          </div>
 
-        <div class="ChangePage">
-          <ul>
-            <li><a class="current" href="#">1</a></li>
-            <li><a class="normal" href="#">2</a></li>
-            <li><a class="normal" href="#">3</a></li>
-            <li><a class="normal" href="#">4</a></li>
-            <li><a class="normal" href="#">5</a></li>
-            <li><a class="normal" href="#">6</a></li>
-          </ul>
+          <div class="ChangePage col-xs-12">
+            <ul>
+              <li><a class="current" href="#">1</a></li>
+              <li><a class="normal" href="#">2</a></li>
+              <li><a class="normal" href="#">3</a></li>
+              <li><a class="normal" href="#">4</a></li>
+              <li><a class="normal" href="#">5</a></li>
+              <li><a class="normal" href="#">6</a></li>
+            </ul>
+
+          </div>
         </div>
+      </div>
+      </div>
+      </div>
+
+       
 
       </div>
     </div>
