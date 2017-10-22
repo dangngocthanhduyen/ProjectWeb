@@ -6,176 +6,7 @@ body
     display: inline;
     font-family: Arial;
 }
-/*.Logo2minHeader
-{
-	padding: 0 0 0 10px;
-}
-.bg-dark 
-{
-    background-color: #f0f0f1!important;
-}
-.fixed-top 
-{
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
-.navbar 
-{
-    display: flex;
-    align-items: center;
-    padding: .5rem 1rem;
-}
-.navbar-expand-md .navbar-toggler 
-{
-    display: none;
-}
-.navbar-expand-md .navbar-collapse 
-{
-    display: flex!important;
-}
-.navbar-collapse 
-{
-    flex-basis: 100%;
-    align-items: center;
-}
-.navbar-expand-md .navbar-nav .nav-link 
-{
-    padding-right: 40px;
-    padding-left: 40px;
-}
-.navbar-expand-md .navbar-nav 
-{
-    flex-direction: row;
-}
-.mr-auto 
-{
-    margin-right: auto!important;
-}
-.navbar-nav 
-{
-    display: flex;
-    margin-bottom: 0;
-    list-style: none;
-}
-.sr-only 
-{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
-    clip-path: inset(50%);
-    border: 0;
-}
-ul 
-{
-    margin-top: 0;
- }
-.form-inline .form-control 
-{
-    display: inline-block;
-    width: auto;
-    vertical-align: middle;
-}
-.mr-sm-2 
-{
-    margin-right: .5rem!important;
-}
-.form-control 
-{
-    display: block;
-    width: 100%;
-    padding: .5rem .75rem;
-    font-size: 1rem;
-    line-height: 1.25;
-    color: #495057;
-    background-color: #fff;
-    background-image: none;
-    background-clip: padding-box;
-    border: 1px solid #F7A08F;
-    border-radius: .25rem;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-}
-input, button
-{
-    margin: 0;
-    font-family: inherit;
-}
-.btn-outline-success 
-{
-    color: #fff;
-    background-color: #F7A08F;
-    background-image: none;
-}
-.btn-outline-success:hover 
-{
-    color: #fff;
-    background-color: #F7A08F;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
-}
-button
-{
-    text-rendering: auto;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-indent: 0px;
-    text-shadow: none;
-    font: 13.3333px Arial;
-    -webkit-writing-mode: horizontal-tb;
-}
-.my-sm-0 
-{
-    margin-top: 0!important;
-    margin-bottom: 0!important;
-}
-.btn 
-{
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: .5rem .75rem;
-    font-size: 1rem;
-    line-height: 1.25;
-    border-radius: .25rem;
-    transition: all .15s ease-in-out;
-}
 
-
-.navbar-collapse
-{
-	flex-basis: 100%;
-    align-items: center;
-    display: flex!important;
-}
-.ml-auto 
-{
-    margin-left: auto!important;
-}
-
-.navbar-nav 
-{
-	flex-direction: row;
-    display: flex;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
-.nav-link
-{
-	color: #F7A08F;
-	font-weight: 500;
-	font-size: larger;
-}
-*/
 /*viewport*/
 .viewport
 {
@@ -608,9 +439,14 @@ ul .nav-top
 {
     width: 100%;
 }
+.container {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: auto;
+    margin-left: auto;
+}
 .LinkHome
 {
-    padding: 0 0 0 20px;
     color: #666666 !important;
 }
 .LinkDuongda
@@ -651,12 +487,12 @@ a:link
 }
 #content .ContentCenter 
 {
-    max-width: 1300px;
     margin: 20px;
 }
 ul, ol, li {
     list-style: none;
     line-height: 19px;
+    padding: 0px;
 }
 .ListTitle
 {
@@ -665,7 +501,6 @@ ul, ol, li {
 }
 .HeadList 
 {
-	padding-left: 20px;
 	font-weight: bold;
     color: #222222;
     font-size: 25px;
@@ -679,7 +514,7 @@ ul, ol, li {
 .ProductListWrap .BodyProductList 
 {
     overflow: hidden;
-    padding-left: 40px;
+    padding-left: 70px;
 }
 .ProductListWrap .BodyProductList .ResultSort 
 {
@@ -708,13 +543,12 @@ ul, ol, li {
 .ProductListWrap .LeftProductList 
 {
     float: left;
-    width: 280px;
+    white-space: nowrap;
 }
 
 .ProductListWrap .BodyProductList .ProductList ul li a 
 {
     display: block;
-    margin-right: 40px;
 }
 .ProductListWrap .BodyProductList .ProductList ul li .thumb 
 {
@@ -725,7 +559,7 @@ ul, ol, li {
     display: block;
     overflow: hidden;
     margin: 10px;
-    line-height: 16px;
+    line-height: 18px;
     font-size: 15px;
     color: #222222;
 }
@@ -741,7 +575,6 @@ ul, ol, li {
 .ProductListWrap .BodyProductList .ProductList ul li 
 {
     float: left;
-    width: 33.3%;
     margin-top: 20px;
     text-align: center;
 }
@@ -784,7 +617,6 @@ img
 }
 .ChangePage a
 {
-
     display: inline-block; 
 	margin: 0 5px;
     border-radius: 50%;
@@ -794,7 +626,9 @@ img
     text-align: center;
     font-size: 12px;
 }
-
+a:hover {
+    color: #F7A08F !important;
+}
 #footer
 {
     width: 100%;
@@ -819,4 +653,9 @@ img
 {
 	text-align:center;
 	margin-bottom:10px;
+}
+.row-fix
+{
+    padding-right:0px!important;
+    padding-left:0px!important;
 }
