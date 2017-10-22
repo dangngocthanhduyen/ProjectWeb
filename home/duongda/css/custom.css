@@ -613,7 +613,7 @@ img
     text-align: center;
     font-size: 12px;
 }
-a:hover {
+.ContentCenter a:hover {
     color: #F7A08F !important;
 }
 #footer
