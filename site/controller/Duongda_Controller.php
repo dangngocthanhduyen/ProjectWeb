@@ -5,17 +5,13 @@ include '../config/paging.php';
 	{
 		function duongdaAction()
 		{
-
-			$config = array(
-		    'current_page'  => isset($_GET['page']) ? $_GET['page'] : 1, // Trang hiện tại
-		    'total_record'  => 100, // Tổng số record
-		    'limit'         => 5,// limit
-		    'link_full'     => 'index.php?page={page}',// Link full có dạng như sau: domain/com/page/{page}
-		    'link_first'    => 'index.php',// Link trang đầu tiên
-				);
-			$paging = new Pagination();
-			$paging->init($config);
-			return $paging;
+			$tranghientai=isset($_GET['page']) ? $_GET['page'] : 1;
+			$duongda=new Duongda_Model();
+			$total_record=$duongda->numRows();
+			$limit=6;
+			$sotrang=($tranghientai-1)*$limit;
+			$data=$duongda->getProduct($sotrang,$limit);
+			return array('data' => $data,'tranghientai'=>$tranghientai,'limit'=>$limit,'total_record'=>$total_record);
 		}
 	}
 ?>

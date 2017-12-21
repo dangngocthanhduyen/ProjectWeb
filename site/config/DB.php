@@ -52,6 +52,21 @@ Class DB
             return $row;
         }
     }
+    public function count_Rows($sql=null)
+    {
+     if($this->conn)
+     {
+        $query = mysqli_query($this->conn,$sql);
+        if ($query) {
+            $row = mysqli_num_rows($query);
+        }
+        else
+        {
+            echo 'Tạch';
+        }
+        return $row;
+    }
+}
 }
 
 ?>
