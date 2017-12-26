@@ -565,3 +565,9 @@ ul
 {
 	padding-left:10% !important;
 }
+
+.button:hover, button:hover {
+    border: 1px solid #fe5252;
+    color: #fe5252;
+    text-decoration: none;
+}

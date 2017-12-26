@@ -6,12 +6,12 @@ Class DB
     private $username='root',
     $password='',
     $localhost='localhost',
-    $dbname='fp';
+    $dbname='new_fp';
     public $conn=NULL; 
     public function connect_DB()
     {
         $this->conn=mysqli_connect($this->localhost,$this->username,$this->password,$this->dbname);
-        mysqli_set_charset($this->conn, 'UTF-8');
+        mysqli_set_charset($this->conn,'UTF8');
     }
 
     public function close_DB()

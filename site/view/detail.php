@@ -24,7 +24,7 @@ $detail=$detail_Controller->detailAction();
 		<div class="navbar-top">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg ">
-					<a class="navbar-brand" href="#">
+					<a class="navbar-brand" href="/MVCFP/index.php">
 						<img src="http://localhost/MVCFP/public/image/logo/fulllogoheader.png" style="width:160px;height:40px;" href="#">
 					</a>
 					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -107,9 +107,9 @@ $detail=$detail_Controller->detailAction();
 								<hr class="border">
 								<div class="wided">
 									<div class="button_group">
-										<button class="button" >
-											Liên Hệ.
-										</button>
+										<a class="button" href='https://www.facebook.com/2mins-corner-1109281215839012/' >
+											Liên Hệ Chi tiết.
+										</a>
 									</div>
 								</div>
 							</div>
