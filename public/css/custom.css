@@ -6,7 +6,11 @@ body
     display: inline;
     font-family: Arial;
 }
-
+a,div,ul,li,h5,p,span,sub,h2
+{
+    font-family: Myriad Pro!important;
+    color: #1ccacd!important
+}
 /*viewport*/
 .viewport
 {
@@ -541,7 +545,7 @@ ul, ol, li {
 }
 .ProductListWrap .BodyProductList .ProductList ul li .desc 
 {
-    display: block;
+    display: inline-block;
     overflow: hidden;
     margin: 10px;
     line-height: 18px;
@@ -593,7 +597,7 @@ img
 }
 .ChangePage ul li .current {
     background: #F7A08F;
-    color: #fff;
+    color: #ffff!important;
 }
 .ChangePage ul li .normal {
     background: #f7f7f7;
@@ -621,8 +625,13 @@ img
     min-height: 40px;
 	border-top: 1px solid #e5e5e5;
 	margin-top: 20px;
-}
 
+}
+.TextFooter
+{
+    color: #555555!important;
+
+}
 .Logo2minFooter
 {
 	display: block; 

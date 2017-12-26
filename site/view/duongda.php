@@ -12,23 +12,30 @@ $_config = array(
     );
 $pagination->init($_config);
 $data_duongda=$data['data'];
+$total_row=$_config['total_record'];
 ?>
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>2min's_corner | Dưỡng da</title>
 	<link href="css/custom.css" rel="stylesheet">
-	<link href="img/logoicon.ico" rel="icon">
+	<link href="public/image/logoicon.ico" rel="icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css"  href= "http://localhost/MVCFP/public/css/style.css">
-	<link rel="stylesheet" type="text/css"  href= "http://localhost/MVCFP/public/css/ss.css">	
-	<link rel="stylesheet" type="text/css"  href= "http://localhost/MVCFP/public/css/custom.css">	
-	<link rel="stylesheet" type="text/css"  href= "http://localhost/MVCFP//public/css/bootstrap.css">
-	<script type="text/javascript" src="http://localhost/MVCFP/public/js/bootstrap.bundle.js"  ></script>
+	<link rel="stylesheet" type="text/css"  href= "/MVCFP/public/css/style.css">
+	<link rel="stylesheet" type="text/css"  href= "/MVCFP/public/css/ss.css">	
+	<link rel="stylesheet" type="text/css"  href= "/MVCFP/public/css/custom.css">	
+	<link rel="stylesheet" type="text/css"  href= "/MVCFP/public/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css"  href="/MVCFP/public/css/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css"  href="/MVCFP/public/css/docs.theme.min.css">
+	<script type="text/javascript" src="/MVCFP/public/js/bootstrap.bundle.js"  ></script>
 	<!-- 	<link href="https://maxcdn.public/csscdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
-	<script type="text/javascript"  src="http://localhost/MVCFP/public/js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="http://localhost/MVCFP/public/js/bootstrap.js"  ></script>
-	<script type="text/javascript"  src="http://localhost/MVCFP/public/js/js.js" ></script>
+	<script type="text/javascript"  src="/MVCFP/public/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/MVCFP/public/js/bootstrap.js"  ></script>
+	<script type="text/javascript"  src="/MVCFP/public/js/js.js" ></script>
 	<script src="https://use.fontawesome.com/9325ad171d.js"></script>
+	<title>Shop 2min_corner</title>
+	<link href="/MVCFP/public/image/logo/logoicon.ico" rel="icon">
+	<link href="/MVCFP/public/image/logoicon.ico" rel="icon">
+	<meta charset="UTF-8">
 </head>
 <body>
 
@@ -37,8 +44,8 @@ $data_duongda=$data['data'];
 		<div class="navbar-top">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg ">
-					<a class="navbar-brand" href="#">
-						<img src="http://localhost/MVCFP/public/image/logo/fulllogoheader.png" style="width:160px;height:40px;" href="#">
+					<a class="navbar-brand" href="/MVCFP/index.php">
+						<img src="/MVCFP/public/image/logo/fulllogoheader.png" style="width:160px;height:40px;" href="/MVCFP/index.php">
 					</a>
 					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -47,19 +54,19 @@ $data_duongda=$data['data'];
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 						<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 							<li class="nav-item">
-								<a class="nav-link">
+								<a class="nav-link" href="/MVCFP/index.php">
 									&nbsp;HOME
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="../home/duongda/index.html">&nbsp;DƯỠNG DA</a>
+								<a class="nav-link" href="duongda.php">&nbsp;DƯỠNG DA</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="../home/about/index.html">&nbsp;MỸ PHẨM</a>
+								<a class="nav-link" href="mypham.php">&nbsp;MỸ PHẨM</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../home/about/index.html">&nbsp;CONTACT</a>
-							</li>
+<!-- 							<li class="nav-item">
+								<a class="nav-link" href="/MVCFP/view/about/index.html">&nbsp;CONTACT</a>
+							</li> -->
 
 						</ul>
 						<form class="form-inline my-2 my-lg-0">
@@ -75,7 +82,7 @@ $data_duongda=$data['data'];
 
 
 	<!-- IMAGE -->
-	<div class="HeadBackground" style="background:url(img/duongda.jpg) no-repeat center bottom;">
+	<div class="HeadBackground" style="background:url(/MVCFP/public/image/banner/duongda.jpg) no-repeat center bottom;">
 		<h2>Dưỡng da</h2>
 	</div>
 
@@ -183,14 +190,14 @@ $data_duongda=$data['data'];
 				<div class="col-md-10 row-fix">
 					<div class="BodyProductList">
 						<div class="ResultSort">
-							<p class="ResultNum"><strong>52</strong> Kết quả</p>
+							<p class="ResultNum"><strong><?=$total_row?></strong> Kết quả</p>
 
 							<div class="Sort">
 								<select class="Select" onchange="fnSort(this.value);">
-									<option value="1" selected="">Tìm kiếm mới</option>
-									<option value="2">Sản phẩm hot</option>
+									<option value="1" selected="">Tổng Các Sản Phẩm</option>
+<!-- 									<option value="2">Sản phẩm hot</option>
 									<option value="4">Giá: từ thấp lên cao</option>
-									<option value="5">Giá: từ cao xuống thấp</option>
+									<option value="5">Giá: từ cao xuống thấp</option> -->
 								</select>
 							</div>
 						</div>
@@ -201,12 +208,12 @@ $data_duongda=$data['data'];
 								<ul>
 									<?php foreach ($data_duongda as $item){?>
 									<li class="col-md-4 col-sm-6 col-xs-12">
-										<a href="#">
+										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>">
 											<div class="thumb img-responsive">
-												<img class="thumbnail" src="http://localhost/MVCFP//<?=$item['Hinh']?>">
+												<img class="thumbnail" src="/MVCFP//<?=$item['Hinh']?>">
 											</div>
 											<div class="desc"><?=$item['TenSP']?></div>
-											<div class="price"><?=$item['Gia']?></div>
+											<!-- <div class="price"><?=$item['Gia']?></div> -->
 										</a>
 									</li>
 									<?php } ?>
@@ -226,19 +233,4 @@ $data_duongda=$data['data'];
 	</div>
 
 	<!-- FOOTER -->
-	<div id='footer'>
-		<img class="Logo2minFooter" src="img/logofooter.jpg">
-		<p class="TextFooter">Tòa BA1, Ký túc xá khu B, Đại học Quốc gia TPHCM</p>
-		<p class="TextFooter">01632533968 - 01685209913</p>
-		<p class="TextFooter">Mở cửa: 9.00AM - 9.00PM</p>
-
-		<div class="logofb_insta">
-			<a href="https://www.facebook.com/2mins-corner-1109281215839012/" title="Facebook"><img src="img/logo-fb.jpg" width="100px" height="100px"></a>
-			&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="https://www.instagram.com/2mins_corner/" title="Instagram"><img src="img/logo-insta.jpg" width="100px" height="100px"></a>
-		</div>
-
-	</div>
-
-</body>
-</html>
+<?php include 'footer.php' ?>

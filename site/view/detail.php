@@ -34,15 +34,15 @@ $detail=$detail_Controller->detailAction();
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 						<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 							<li class="nav-item">
-								<a class="nav-link">
+								<a class="nav-link" href="/MVCFP/index.php">
 									&nbsp;HOME
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="../home/duongda/index.html">&nbsp;DƯỠNG DA</a>
+								<a class="nav-link" href="duongda.php">&nbsp;DƯỠNG DA</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="../home/about/index.html">&nbsp;MỸ PHẨM</a>
+								<a class="nav-link" href="mypham.php">&nbsp;MỸ PHẨM</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="../home/about/index.html">&nbsp;CONTACT</a>

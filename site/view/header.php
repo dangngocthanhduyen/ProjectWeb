@@ -24,8 +24,8 @@ $discount=$home_Controller->homeDAction();
 
 
 	<title>Shop 2min_corner</title>
-	<link href="Hinh/logo/logoicon.ico" rel="icon">
-	<link href="Hinh/logoicon.ico" rel="icon">
+	<link href="public/image/logo/logoicon.ico" rel="icon">
+	<link href="public/image/logoicon.ico" rel="icon">
 	<meta charset="UTF-8">
 </head>
 <body>
@@ -33,8 +33,8 @@ $discount=$home_Controller->homeDAction();
 	<div class="navbar-top">
 		<div class="container">
 			<nav class="navbar navbar-expand-lg ">
-				<a class="navbar-brand" href="#">
-					<img src="public/image/logo/fulllogoheader.png" style="width:160px;height:40px;" href="#">
+				<a class="navbar-brand" href="/MVCFP/index.php">
+					<img src="public/image/logo/fulllogoheader.png" style="width:160px;height:40px;" href="/MVCFP/index.php">
 				</a>
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -43,19 +43,19 @@ $discount=$home_Controller->homeDAction();
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 						<li class="nav-item ">
-							<a class="nav-link">
+							<a class="nav-link" href="/MVCFP/index.php">
 								&nbsp;HOME
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="../home/duongda/index.html">&nbsp;DƯỠNG DA</a>
+							<a class="nav-link" href="site/view/duongda.php">&nbsp;DƯỠNG DA</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="../home/about/index.html">&nbsp;MỸ PHẨM</a>
+							<a class="nav-link" href="site/view/mypham.php">&nbsp;MỸ PHẨM</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="../home/about/index.html">&nbsp;CONTACT</a>
-						</li>
+<!-- 						<li class="nav-item">
+							<a class="nav-link" href="site/view/duongda.php">&nbsp;CONTACT</a>
+						</li> -->
 
 					</ul>
 					<form class="form-inline my-2 my-lg-0">
