@@ -53,9 +53,11 @@ $discount=$home_Controller->homeDAction();
 						<li class="nav-item">
 							<a class="nav-link" href="site/view/mypham.php">&nbsp;MỸ PHẨM</a>
 						</li>
-<!-- 						<li class="nav-item">
-							<a class="nav-link" href="site/view/duongda.php">&nbsp;CONTACT</a>
-						</li> -->
+						<li class="nav-item">
+								<a class="nav-link" href="#">
+									<i class="fa fa-shopping-cart" aria-hidden="true">&nbsp;(1)</i>
+								</a>
+						</li>
 
 					</ul>
 					<form class="form-inline my-2 my-lg-0">

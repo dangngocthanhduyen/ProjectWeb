@@ -86,7 +86,7 @@ $detail=$detail_Controller->detailAction();
 									</span>
 								</p>
 								<p>
-								 <?=$detail[5]?>
+									<?=$detail[5]?>
 								</p>
 								<hr class="border">
 								<div class="price">
@@ -108,6 +108,9 @@ $detail=$detail_Controller->detailAction();
 								<div class="wided">
 									<div class="button_group">
 										<a class="button" href='https://www.facebook.com/2mins-corner-1109281215839012/' >
+											Add Cart.
+										</a>
+										<a class="button bt-right" href='https://www.facebook.com/2mins-corner-1109281215839012/' >
 											Liên Hệ Chi tiết.
 										</a>
 									</div>

@@ -1,6 +1,8 @@
 <?php
 include '../controller/Duongda_Controller.php';
+include '../controller/Cart_Controller.php';
 $duongda=new Duongda_Controller();
+$duongda_cart=new Cart_Controller();
 $data=$duongda->duongdaAction();
 $pagination=new Pagination();
 $_config = array(
@@ -13,6 +15,14 @@ $_config = array(
 $pagination->init($_config);
 $data_duongda=$data['data'];
 $total_row=$_config['total_record'];
+
+$cart=$duongda_cart->cartAction();
+print_r($cart);
+     
+  
+?>
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -25,7 +35,7 @@ $total_row=$_config['total_record'];
 	<link rel="stylesheet" type="text/css"  href= "/MVCFP/public/css/custom.css">	
 	<link rel="stylesheet" type="text/css"  href= "/MVCFP/public/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css"  href="/MVCFP/public/css/owl.theme.default.min.css">
-	<link rel="stylesheet" type="text/css"  href="/MVCFP/public/css/docs.theme.min.css">
+	<!-- <link rel="stylesheet" type="text/css"  href="/MVCFP/public/css/docs.theme.min.css"> -->
 	<script type="text/javascript" src="/MVCFP/public/js/bootstrap.bundle.js"  ></script>
 	<!-- 	<link href="https://maxcdn.public/csscdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
 	<script type="text/javascript"  src="/MVCFP/public/js/jquery-3.2.1.min.js"></script>
@@ -64,9 +74,11 @@ $total_row=$_config['total_record'];
 							<li class="nav-item">
 								<a class="nav-link" href="mypham.php">&nbsp;MỸ PHẨM</a>
 							</li>
-<!-- 							<li class="nav-item">
-								<a class="nav-link" href="/MVCFP/view/about/index.html">&nbsp;CONTACT</a>
-							</li> -->
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									<i class="fa fa-shopping-cart" aria-hidden="true">&nbsp;(1)</i>
+								</a>
+							</li>
 
 						</ul>
 						<form class="form-inline my-2 my-lg-0">
@@ -88,15 +100,10 @@ $total_row=$_config['total_record'];
 
 
 	<!-- CONTENT -->
-	<div class='container'>
-		<div class=" ContentCenter">
-			<div class="Location">
-				<a class='LinkHome' href="#">Home > </a>
-				<a class='LinkDuongda' href="#">Dưỡng da</a>
-			</div>
-
-			<div class="ProductListWrap">
-				<div class="col-md-2 row-fix">
+	<div class=" ContentCenter">
+		<div class="ProductListWrap">
+			<div class="row">
+				<div class="col-md-2 list-menu">
 					<div class="LeftProductList">
 						<h3><a class="HeadList" href="#" >Dưỡng da</a></h3>
 						<ul class="List">
@@ -187,7 +194,7 @@ $total_row=$_config['total_record'];
 					</div>
 				</div>
 
-				<div class="col-md-10 row-fix">
+				<div class="col-md-10 ">
 					<div class="BodyProductList">
 						<div class="ResultSort">
 							<p class="ResultNum"><strong><?=$total_row?></strong> Kết quả</p>
@@ -207,30 +214,42 @@ $total_row=$_config['total_record'];
 							<div class="row">
 								<ul>
 									<?php foreach ($data_duongda as $item){?>
-									<li class="col-md-4 col-sm-6 col-xs-12">
-										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>">
-											<div class="thumb img-responsive">
-												<img class="thumbnail" src="/MVCFP//<?=$item['Hinh']?>">
-											</div>
+									<li class="col-md-4 col-sm-6 col-xs-12 ">
+										<div class="li-border">
+											<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>">
+												<div class="thumb img-responsive">
+													<img class="thumbnail" src="/MVCFP//<?=$item['Hinh']?>" style="width: 150px;height:150px;">
+												</div>
+
+											</a>
 											<div class="desc"><?=$item['TenSP']?></div>
-											<!-- <div class="price"><?=$item['Gia']?></div> -->
-										</a>
-									</li>
-									<?php } ?>
-								</ul>
-							</div>
+											<div class="price"><?=$item['Gia']?>
+												<sup>
+													VND
+												</sup>
+											</div>
+											<div class="button_group">
+												<a href="duongda.php?action=add&id=<?php echo $item['ID'] ?>">Add to cart</a>
+												<a class="button" href='https://www.facebook.com/2mins-corner-1109281215839012/' >
+													Liên Hệ Chi tiết.
+												</a>
+											</div>
+											<?php } ?>
+										</div>
+									</div>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="ChangePage">
-				<ul>
-					<?php echo $pagination->html()?>
-				</ul>
-			</div>
-
 		</div>
 	</div>
-
-	<!-- FOOTER -->
+	<div class="ChangePage">
+		<ul>
+			<?php echo $pagination->html()?>
+		</ul>
+	</div>
+</div>
+<!-- FOOTER -->
 <?php include 'footer.php' ?>
