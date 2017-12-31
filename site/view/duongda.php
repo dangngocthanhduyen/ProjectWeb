@@ -1,8 +1,9 @@
 <?php
+
 include '../controller/Duongda_Controller.php';
-include '../controller/Cart_Controller.php';
+include '../Model/Cart_Model.php';
 $duongda=new Duongda_Controller();
-$duongda_cart=new Cart_Controller();
+$duongda_cart=new Cart_Model();
 $data=$duongda->duongdaAction();
 $pagination=new Pagination();
 $_config = array(
@@ -15,14 +16,7 @@ $_config = array(
 $pagination->init($_config);
 $data_duongda=$data['data'];
 $total_row=$_config['total_record'];
-
-$cart=$duongda_cart->cartAction();
-print_r($cart);
-     
-  
-?>
-
-
+$duongda_cart->get_Cart();
 ?>
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -214,31 +208,37 @@ print_r($cart);
 							<div class="row">
 								<ul>
 									<?php foreach ($data_duongda as $item){?>
-									<li class="col-md-4 col-sm-6 col-xs-12 ">
-										<div class="li-border">
-											<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>">
-												<div class="thumb img-responsive">
-													<img class="thumbnail" src="/MVCFP//<?=$item['Hinh']?>" style="width: 150px;height:150px;">
-												</div>
 
-											</a>
-											<div class="desc"><?=$item['TenSP']?></div>
-											<div class="price"><?=$item['Gia']?>
-												<sup>
-													VND
-												</sup>
-											</div>
-											<div class="button_group">
-												<a href="duongda.php?action=add&id=<?php echo $item['ID'] ?>">Add to cart</a>
-												<a class="button" href='https://www.facebook.com/2mins-corner-1109281215839012/' >
-													Liên Hệ Chi tiết.
+									<li class="col-md-4 col-sm-6 col-xs-12 ">
+
+										<div class="li-border">
+											<form method="post" action="duongda.php?action=add&ID=<?php echo $item["ID"]; ?>">
+												<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>">
+													<div class="thumb img-responsive">
+														<img class="thumbnail" src="/MVCFP//<?=$item['Hinh']?>" style="width: 150px;height:150px;">
+													</div>
+
 												</a>
+												<div class="desc"><?=$item['TenSP']?></div>
+												<div class="price"><?=$item['Gia']?>
+													<sup>
+														VND
+													</sup>
+												</div>
+												<div class="button_group">
+													<input type="text" name="quantity" value="1" size="2" />
+													<input type="submit" value="Add to cart" class="button">
+													<a class="button" href='https://www.facebook.com/2mins-corner-1109281215839012/' >
+														Liên Hệ Chi tiết.
+													</a>
+												</form>
 											</div>
-											<?php } ?>
 										</div>
-									</div>
-								</li>
-							</ul>
+									</li>
+									
+									<?php } ?>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>

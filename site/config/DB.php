@@ -6,7 +6,7 @@ Class DB
     private $username='root',
     $password='',
     $localhost='localhost',
-    $dbname='new_fp';
+    $dbname='fp';
     public $conn=NULL; 
     public function connect_DB()
     {
