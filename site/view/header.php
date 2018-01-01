@@ -54,8 +54,8 @@ $discount=$home_Controller->homeDAction();
 							<a class="nav-link" href="site/view/mypham.php">&nbsp;MỸ PHẨM</a>
 						</li>
 						<li class="nav-item">
-								<a class="nav-link" href="#">
-									<i class="fa fa-shopping-cart" aria-hidden="true">&nbsp;(1)</i>
+								<a class="nav-link" href="/MVCFP/site/view/cart.php">
+									<i class="fa fa-shopping-cart" aria-hidden="true">&nbsp;</i>
 								</a>
 						</li>
 
@@ -133,7 +133,7 @@ $discount=$home_Controller->homeDAction();
 										<a class="product-title product-bold"><?php echo $item["TenSP"]?></a>
 									</div> -->
 								</h3>
-								<a href="site/view/detail.php?id=<?=$item['ID']?>" type="button" role="button" class="my-Btn btq-more">
+								<a href="site/view/detail.php?ID=<?=$item['ID']?>" type="button" role="button" class="my-Btn btq-more">
 										<i class="fa fa-search" aria-hidden="true"></i>
 								</a>
 								<!-- 								<div class="text-title"><?php echo $item["Gia"]?></div> -->

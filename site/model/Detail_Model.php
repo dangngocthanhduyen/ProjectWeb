@@ -7,7 +7,7 @@ include '../config/DB.php';
 			$db=new DB();
 			$db->connect_DB();
 			$query="SELECT * FROM chitietsp WHERE ID=$id";
-			$data=$db->get_Row($query);
+			$data=$db->get_All_Row($query);
 			return $data;
 		}
 	}

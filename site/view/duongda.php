@@ -19,7 +19,8 @@ $total_row=$_config['total_record'];
 $duongda_cart->get_Cart();
 ?>
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>2min's_corner | Dưỡng da</title>
 	<link href="css/custom.css" rel="stylesheet">
 	<link href="public/image/logoicon.ico" rel="icon">
@@ -69,8 +70,8 @@ $duongda_cart->get_Cart();
 								<a class="nav-link" href="mypham.php">&nbsp;MỸ PHẨM</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">
-									<i class="fa fa-shopping-cart" aria-hidden="true">&nbsp;(1)</i>
+								<a class="nav-link" href="/MVCFP/site/view/cart.php">
+									<i class="fa fa-shopping-cart" aria-hidden="true">&nbsp;</i>
 								</a>
 							</li>
 

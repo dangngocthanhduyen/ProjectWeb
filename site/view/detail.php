@@ -1,7 +1,11 @@
 <?php 
 include '../controller/Detail_Controller.php';
+
+include '../Model/Cart_Model.php';
+$duongda_cart=new Cart_Model();
 $detail_Controller=new Detail_Controller();
 $detail=$detail_Controller->detailAction();
+$duongda_cart->get_Cart();
 ?>
 <html>
 <head>
@@ -45,7 +49,9 @@ $detail=$detail_Controller->detailAction();
 								<a class="nav-link" href="mypham.php">&nbsp;MỸ PHẨM</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="../home/about/index.html">&nbsp;CONTACT</a>
+								<a class="nav-link" href="/MVCFP/site/view/cart.php">
+									<i class="fa fa-shopping-cart" aria-hidden="true">&nbsp;</i>
+								</a>
 							</li>
 
 						</ul>
@@ -61,17 +67,19 @@ $detail=$detail_Controller->detailAction();
 		<div class="container_fullwidth container-product">
 			<div class="container">
 				<div class="row">
+					<?php foreach ($detail as $item){?>
 					<div class="col-md-10 product-row">
 						<div class="products-details">
+							
 							<div class="preview_image">
 								<div>
-									<img src="http://localhost/MVCFP/<?=$detail['4']?>" style="width:300px;height:300px;position: relative;
+									<img src="http://localhost/MVCFP/<?=$item["Hinh"]?>" style="width:300px;height:300px;position: relative;
 									margin: 4%;">
 								</div>
 							</div>
 							<div class="products-description">
 								<h5 class="name">
-									<?=$detail[2]?>
+									<?=$item["TenSP"]?>
 								</h5>
 <!-- 								<p>
 									<img alt="" src="images/star.png">
@@ -86,13 +94,13 @@ $detail=$detail_Controller->detailAction();
 									</span>
 								</p>
 								<p>
-									<?=$detail[5]?>
+									<?=$item["Mota"]?>
 								</p>
 								<hr class="border">
 								<div class="price">
 									Price : 
 									<span class="new_price">
-										<?=$detail[3]?>
+										<?=$item["Gia"]?>
 										<sup>
 											VND
 										</sup>
@@ -105,19 +113,22 @@ $detail=$detail_Controller->detailAction();
 									</span> -->
 								</div>
 								<hr class="border">
-								<div class="wided">
-									<div class="button_group">
-										<a class="button" href='https://www.facebook.com/2mins-corner-1109281215839012/' >
-											Add Cart.
-										</a>
-										<a class="button bt-right" href='https://www.facebook.com/2mins-corner-1109281215839012/' >
-											Liên Hệ Chi tiết.
-										</a>
-									</div>
+								<form method="post" action="detail.php?action=add&ID=<?php echo $item["ID"]; ?>">
+									<div class="wided">
+										<div class="button_group">
+											<input type="text" name="quantity" value="1" size="2" />
+											<input type="submit" value="Add Cart" class="button">
+											<a class="button bt-right" href='https://www.facebook.com/2mins-corner-1109281215839012/' >
+												Liên Hệ Chi tiết.
+											</a>
+										</div>
+									</form>
 								</div>
+
 							</div>
 						</div>
 					</div>
+					<?php }?>
 				</div>
 			</div>
 		</div>
