@@ -6,7 +6,6 @@ include '../model/Cart_Model.php';
 		{
 			$cart_Model= new Cart_Model();
 			$cart_Model->get_Cart();
-			return $cart_Model;
 		}
 	}
 ?>

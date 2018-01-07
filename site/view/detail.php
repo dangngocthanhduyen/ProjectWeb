@@ -7,62 +7,7 @@ $detail_Controller=new Detail_Controller();
 $detail=$detail_Controller->detailAction();
 $duongda_cart->get_Cart();
 ?>
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,700,500italic,100italic,100' rel='stylesheet' type='text/css'>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css"  href= "http://localhost/MVCFP/public/css/style.css">
-	<link rel="stylesheet" type="text/css"  href= "http://localhost/MVCFP/public/css/ss.css">	
-	<link rel="stylesheet" type="text/css"  href= "http://localhost/MVCFP//public/css/bootstrap.css">
-	<!-- 	<link href="https://maxcdn.public/csscdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
-	<script type="text/javascript"  src="http://localhost/MVCFP/public/js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="http://localhost/MVCFP/public/js/bootstrap.js"  ></script>
-	<script type="text/javascript"  src="http://localhost/MVCFP/public/js/js.js" ></script>
-	<script src="https://use.fontawesome.com/9325ad171d.js"></script>
-</head>
-<body>
-	<div class="wrapper">
-		<div class="navbar-top">
-			<div class="container">
-				<nav class="navbar navbar-expand-lg ">
-					<a class="navbar-brand" href="/MVCFP/index.php">
-						<img src="http://localhost/MVCFP/public/image/logo/fulllogoheader.png" style="width:160px;height:40px;" href="#">
-					</a>
-					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-						<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-							<li class="nav-item">
-								<a class="nav-link" href="/MVCFP/index.php">
-									&nbsp;HOME
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="duongda.php">&nbsp;DƯỠNG DA</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="mypham.php">&nbsp;MỸ PHẨM</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="/MVCFP/site/view/cart.php">
-									<i class="fa fa-shopping-cart" aria-hidden="true">&nbsp;</i>
-								</a>
-							</li>
-
-						</ul>
-						<form class="form-inline my-2 my-lg-0">
-							<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-						</form>
-					</div>
-				</nav>
-			</div>
-		</div>              
+<?php include "header.php" ?>
 		<div class="clearfix"></div>
 		<div class="container_fullwidth container-product">
 			<div class="container">
