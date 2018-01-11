@@ -38,6 +38,7 @@ $(document).ready(function()
 	});
 });
 
+
 //-Function---
 // function hover(element) {
 //     element.setAttribute('src', '../image/banner/lipstick-icon.png');

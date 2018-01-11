@@ -565,6 +565,7 @@ ul, ol, li {
     float: left;
     margin-top: 20px;
     text-align: center;
+    padding-bottom: 20px;
 }
 .ProductListWrap .BodyProductList .ProductList ul li .thumb img 
 {
@@ -628,7 +629,8 @@ img
 }
 .TextFooter
 {
-    color: #555555!important;
+    /*color: #555555!important;*/
+    font-size: 17px;
 
 }
 .Logo2minFooter

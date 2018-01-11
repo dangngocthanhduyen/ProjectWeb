@@ -53,9 +53,39 @@ Class Cart_Model
 				unset($_SESSION["cart_item"]);
 
 				case "checkout":
-				unset($_SESSION["cart_item"]);
-				header('Location:/MVCFP/index.php');
-				break;	
+				if(!empty($_SESSION['cart_item']))
+				{
+					if(!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['phone']))
+					{
+						$name=$_POST['name'];
+						$address=$_POST['address'];
+						$sdt=$_POST['phone'];
+						$date = date('Y-m-d H:i:s');
+						$item_total = 0;
+						foreach ($_SESSION['cart_item'] as $item) {
+							$item_total += ($item["price"]*$item["quantity"]);
+						}
+						$query="INSERT INTO donhang(Ten,Diachi,Tongtien,SDT,NGAY) VALUES ('$name','$address','$item_total','$sdt','$date')";
+						$db_handle->ExecuteNonQuery($query);
+						foreach ($_SESSION['cart_item'] as $item) {
+							$query_1="SELECT IDDH FROM DonHang ORDER BY IDDH DESC LIMIT 1 ";
+							$data=$db_handle->get_All_Row($query_1);
+							$iddh=$data[0]['IDDH'];
+							$namesp=$item['name'];
+							$sl=$item['quantity'];
+							$query_2="INSERT INTO chitietdonhang(IDDH,TenSP,SL) VALUES ('$iddh','$namesp','$sl')";
+							$db_handle->ExecuteNonQuery($query_2);
+						}
+						unset($_SESSION["cart_item"]);
+						header('Location:/MVCFP/index.php');
+						break;	
+					}
+				}
+				else
+				{
+					header('Location:/MVCFP/index.php');
+				}
+
 			}
 
 		}

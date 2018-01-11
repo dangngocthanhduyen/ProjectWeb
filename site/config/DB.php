@@ -54,19 +54,25 @@ Class DB
     }
     public function count_Rows($sql=null)
     {
-     if($this->conn)
-     {
-        $query = mysqli_query($this->conn,$sql);
-        if ($query) {
-            $row = mysqli_num_rows($query);
-        }
-        else
+        if($this->conn)
         {
-            echo 'Tạch';
+             $query = mysqli_query($this->conn,$sql);
+            if ($query){
+                $row = mysqli_num_rows($query);
+            }
+            else
+            {
+                echo 'Tạch';
+            }
+            return $row;
         }
-        return $row;
+    }
+    public function ExecuteNonQuery($sql=NULL)
+    {
+        if($this->conn)
+        {
+            mysqli_query($this->conn,$sql);
+        }
     }
 }
-}
-
 ?>
