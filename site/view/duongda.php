@@ -5,6 +5,7 @@ include '../controller/Cart_Controller.php';
 $duongda=new Duongda_Controller();
 $duongda_cart=new Cart_Controller();
 $data=$duongda->duongdaAction();
+$list=$duongda->duongdalistAction();
 $pagination=new Pagination();
 $_config = array(
         'current_page'  => $data['tranghientai'], // Trang hiện tại
@@ -35,88 +36,50 @@ $duongda_cart->cartAction();
 		<div class="row">
 			<div class="col-md-2 list-menu">
 				<div class="LeftProductList">
-					<h3><a class="HeadList" href="#" >Dưỡng da</a></h3>
+					<h3><a class="HeadList" >Dưỡng da</a></h3>
 					<ul class="List">
 
 						<li>
-							<a class="ListTitle" href="#">Làm sạch  (23)</a>
+							<a class="ListTitle" >Làm sạch</a>
 							<ul>
-								<li>
-									<a href="#">Etude House (9)</a>
-								</li>
-
-								<li>
-									<a href="#">Mising U (2)</a>
-								</li>
-
-								<li>
-									<a href="#">Herd Day Cleansing Cream (3)</a>
-								</li>
-
-								<li>
-									<a href="#">Super Aqua-Missha (2)</a>
-								</li>
-
-								<li>
-									<a href="#">Smooth lip scrub (5)</a>
-								</li>
-
-								<li>
-									<a href="#">Others (2)</a>
-								</li>
-
+								<?php foreach ($list as $item ) { ?>
+									<li>
+										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>"><?PHP ECHO $item['TenSP']?></a>
+									</li>
+								<?php }?>
 							</ul>
 						</li>
 
 						<li>
-							<a class="ListTitle" href="#">Mặt nạ (15)</a>
+							<a class="ListTitle" >Mặt nạ (15)</a>
 							<ul>
-								<li>
-									<a href="#">Color Clay Mask (10)</a>
-								</li>
-
-								<li>
-									<a href="#">Squeeze Mask (3)</a>
-								</li>
-
-								<li>
-									<a href="#">Innisfree Black Berry (1)</a>
-								</li>
-
-								<li>
-									<a href="#">Others (1)</a>
-								</li>
-
+								<?php foreach ($list as $item ) { ?>
+									<li>
+										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>"><?PHP ECHO $item['TenSP']?></a>
+									</li>
+								<?php }?>
 							</ul>
 						</li>
 
 						<li>
-							<a class="ListTitle" href="#">Xịt khoáng (9)</a>
+							<a class="ListTitle" >Xịt khoáng (9)</a>
 							<ul>
-								<li>
-									<a href="#">Green Tea Mineral Mist (3)</a>
-								</li>
-
-								<li>
-									<a href="#">Aloevera (4)</a>
-								</li>
-
-								<li>
-									<a href="#">Others (2)</a>
-								</li>
+								<?php foreach ($list as $item ) { ?>
+									<li>
+										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>"><?PHP ECHO $item['TenSP']?></a>
+									</li>
+								<?php }?>
 							</ul>
 						</li>
 
 						<li>
-							<a class="ListTitle" href="#">Chống nắng (5)</a>
+							<a class="ListTitle" >Chống nắng (5)</a>
 							<ul>
-								<li>
-									<a href="#">Eco safety daily sunblock (4)</a>
-								</li>
-
-								<li>
-									<a href="#">Others (1)</a>
-								</li>
+								<?php foreach ($list as $item ) { ?>
+									<li>
+										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>"><?PHP ECHO $item['TenSP']?></a>
+									</li>
+								<?php }?>
 							</ul>
 						</li>
 

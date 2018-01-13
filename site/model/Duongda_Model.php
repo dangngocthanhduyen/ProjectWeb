@@ -18,5 +18,13 @@ include '../config/DB.php';
 			$data=$db->count_rows($query);
 			return $data;
 		}
+		public function listProduct()
+		{
+			$db=new DB();
+			$db->connect_DB();
+			$query="SELECT * FROM chitietsp c INNER JOIN loaisp p ON c.IDSP=p.IDLoaiSp WHERE c.IDSP=1 limit 1,3";
+			$data=$db->get_All_Row($query);
+			return $data;
+		}
 	}
 ?>

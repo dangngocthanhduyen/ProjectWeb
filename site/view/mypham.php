@@ -4,6 +4,7 @@ include '../controller/Cart_Controller.php';
 $duongda=new Duongda_Controller();
 $data=$duongda->duongdaAction();
 $duongda_cart=new Cart_Controller();
+$list=$duongda->duongdalistAction();
 $duongda_cart->cartAction();
 $pagination=new Pagination();
 $_config = array(
@@ -36,68 +37,40 @@ $total_row=$_config['total_record'];
 		<div class="row">
 			<div class="col-md-2 row-fix">
 				<div class="LeftProductList">
-					<h3><a class="HeadList" href="#" >Mỹ Phẩm</a></h3>
+					<h3><a class="HeadList"  >Mỹ Phẩm</a></h3>
 					<ul class="List">
 
 						<li>
-							<a class="ListTitle" href="#">Trang điểm mặt (23)</a>
+							<a class="ListTitle">Trang điểm mặt (23)</a>
 							<ul>
-								<li>
-									<a href="#">Peripera SPF 50++ (9)</a>
-								</li>
-
-								<li>
-									<a href="#">Ink cushion (5)</a>
-								</li>
-
-								<li>
-									<a href="#">A'peiu Wonder Tension (2)</a>
-								</li>
-
-								<li>
-									<a href="#">Rice Concealer Tip (3)</a>
-								</li>
-
-								<li>
-									<a href="#">Others (4)</a>
-								</li>
+								<?php foreach ($list as $item ) { ?>
+									<li>
+										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>"><?PHP ECHO $item['TenSP']?></a>
+									</li>
+								<?php }?>
 
 							</ul>
 						</li>
 
 						<li>
-							<a class="ListTitle" href="#">Trang điểm mắt (15)</a>
+							<a class="ListTitle" ">Trang điểm mắt (15)</a>
 							<ul>
-								<li>
-									<a href="#">Innisfree Concealer (5)</a>
-								</li>
-								<li>
-									<a href="#">Auto Eyebrow Pencil (5)</a>
-								</li>
-
-								<li>
-									<a href="#">Others (2)</a>
-								</li>
+								<?php foreach ($list as $item ) { ?>
+									<li>
+										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>"><?PHP ECHO $item['TenSP']?></a>
+									</li>
+								<?php }?>
 							</ul>
 						</li>
 
 						<li>
-							<a class="ListTitle" href="#">Xịt khoáng (9)</a>
+							<a class="ListTitle" >Xịt khoáng (9)</a>
 							<ul>
-								<li>
-									<a href="#">Trang điểm môi (13)</a>
-								</li>
-
-								<li>
-									<a href="#">Dear Darling Tint (3)</a>
-								</li>
-
-								<li>
-									<a href="#">Moart Velvet Lipstick (4)</a>
-								</li>
-								<li>
-									<a href="#">Others (2)</a>
-								</li>
+								<?php foreach ($list as $item ) { ?>
+									<li>
+										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>"><?PHP ECHO $item['TenSP']?></a>
+									</li>
+								<?php }?>
 							</ul>
 						</li>
 
