@@ -13,5 +13,11 @@ include '../config/paging.php';
 			$data=$duongda->getProduct($sotrang,$limit);
 			return array('data' => $data,'tranghientai'=>$tranghientai,'limit'=>$limit,'total_record'=>$total_record);
 		}
+		function duongdalistAction()
+		{
+			$duongda=new Duongda_Model();
+			$total_list=$duongda->listProduct();
+			return $total_list;
+		}
 	}
 ?>
