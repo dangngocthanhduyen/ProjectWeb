@@ -14,7 +14,7 @@ $config = array(
 $paging = new Pagination();
  
 $paging->init($config);
-$offset=1;
+$offset=0;
 if(isset($_GET['page'])){
 	$offset=($_GET["page"]-1)*5;
 	$query="SELECT * FROM chitietsp LIMIT ".$offset.",5";
