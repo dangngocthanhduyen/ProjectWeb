@@ -10,8 +10,8 @@
 		$data_edit1->bindParam(":id",$id,PDO::PARAM_INT);
 		$data_edit1->execute();
 		$data_pic=$data_edit1->fetch(PDO::FETCH_ASSOC);
-			if(file_exists('upload/'.$data_pic["Hinh"])){
-				unlink('upload/'.$data_pic["Hinh"]);
+			if(file_exists('../'.$data_pic["Hinh"])){
+				unlink('../'.$data_pic["Hinh"]);
 			}
 			$smmt=$conn->prepare("DELETE FROM chitietsp WHERE ID=:id");
 			$smmt->bindParam(":id",$id,PDO::PARAM_INT);

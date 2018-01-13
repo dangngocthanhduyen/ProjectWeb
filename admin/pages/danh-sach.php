@@ -14,6 +14,7 @@ $config = array(
 $paging = new Pagination();
  
 $paging->init($config);
+$offset=1;
 if(isset($_GET['page'])){
 	$offset=($_GET["page"]-1)*5;
 	$query="SELECT * FROM chitietsp LIMIT ".$offset.",5";
@@ -51,7 +52,7 @@ if(empty($data)){
 			?>
 			<tr>
 
-				<th scope="row"><?php echo $value["ID"];?></th>
+				<th scope="row"><?php echo $offset++;?></th>
 				<td ><?php echo $value["TenSP"];?></td>
 				<td ><?php echo $value["Gia"];?></td>
 				<td ><?php echo $value["Noibat"];?></td>

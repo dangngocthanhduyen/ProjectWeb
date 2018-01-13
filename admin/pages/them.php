@@ -18,7 +18,7 @@ if(isset($_POST["txtthem"])){
 			"price" => $_POST["txtprice"],
 			"rate" =>$_POST["txtnumber"],
 			"intro" =>$_POST["txtintro"],
-			"picture" => $_FILES["txtimage"]["name"],
+			"picture" => "public/image/product/".$_FILES["txtimage"]["name"],
 			"created_at"=> time()
 		);
 		$check=$conn->prepare("SELECT * FROM chitietsp WHERE TenSP = :name");
@@ -35,7 +35,7 @@ if(isset($_POST["txtthem"])){
 			$smmt->bindParam(":picture",$data["picture"],PDO::PARAM_STR);
 			$smmt->bindParam(":created_at",$data["created_at"],PDO::PARAM_INT);
 			$smmt->execute();
-			move_uploaded_file($_FILES["txtimage"]["tmp_name"],"upload/".$_FILES["txtimage"]["name"]);
+			move_uploaded_file($_FILES["txtimage"]["tmp_name"],"../public/image/product/".$_FILES["txtimage"]["name"]);
 			header("location:index.php");
 			exit();
 		}
