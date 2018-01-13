@@ -41,7 +41,7 @@ $duongda_cart->cartAction();
 
 						<li>
 							<a class="ListTitle" >Làm sạch</a>
-							<ul>
+							<ul class="ListTitle1">
 								<?php foreach ($list as $item ) { ?>
 									<li>
 										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>"><?PHP ECHO $item['TenSP']?></a>
@@ -51,8 +51,8 @@ $duongda_cart->cartAction();
 						</li>
 
 						<li>
-							<a class="ListTitle" >Mặt nạ (15)</a>
-							<ul>
+							<a class="ListTitle" >Mặt nạ</a>
+							<ul class="ListTitle1">
 								<?php foreach ($list as $item ) { ?>
 									<li>
 										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>"><?PHP ECHO $item['TenSP']?></a>
@@ -62,8 +62,8 @@ $duongda_cart->cartAction();
 						</li>
 
 						<li>
-							<a class="ListTitle" >Xịt khoáng (9)</a>
-							<ul>
+							<a class="ListTitle" >Xịt khoáng</a>
+							<ul class="ListTitle1">
 								<?php foreach ($list as $item ) { ?>
 									<li>
 										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>"><?PHP ECHO $item['TenSP']?></a>
@@ -73,8 +73,8 @@ $duongda_cart->cartAction();
 						</li>
 
 						<li>
-							<a class="ListTitle" >Chống nắng (5)</a>
-							<ul>
+							<a class="ListTitle" >Chống nắng</a>
+							<ul class="ListTitle1">
 								<?php foreach ($list as $item ) { ?>
 									<li>
 										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>"><?PHP ECHO $item['TenSP']?></a>
@@ -94,10 +94,10 @@ $duongda_cart->cartAction();
 
 						<div class="Sort">
 							<select class="Select" onchange="fnSort(this.value);">
-								<option value="1" selected="">Tổng Các Sản Phẩm</option>
-<!-- 									<option value="2">Sản phẩm hot</option>
-									<option value="4">Giá: từ thấp lên cao</option>
-									<option value="5">Giá: từ cao xuống thấp</option> -->
+								<!-- <option value="1" selected="">Tổng Các Sản Phẩm</option>
+									<option value="2">Sản phẩm hot</option> -->
+									<option value="1">Giá: từ thấp lên cao</option>
+									<option value="2">Giá: từ cao xuống thấp</option>
 								</select>
 							</div>
 						</div>
@@ -126,9 +126,9 @@ $duongda_cart->cartAction();
 												</div>
 												<div class="button_group">
 													<input type="text" name="quantity" value="1" size="2" />
-													<input type="submit" value="Add to cart" class="button">
-													<a class="button" href='https://www.facebook.com/2mins-corner-1109281215839012/' >
-														Liên Hệ Chi tiết.
+													<input type="submit" value="Add to cart" class="btn btn-outline-success ">
+													<a class="btn btn-outline-success lienhechitiet" href='https://www.facebook.com/2mins-corner-1109281215839012/' >
+														Liên Hệ Chi tiết
 													</a>
 												</form>
 											</div>
@@ -150,5 +150,30 @@ $duongda_cart->cartAction();
 		</ul>
 	</div>
 </div>
+
+<!-- scroll top-->
+	<button href="#" class="scrollToTop">Top</button>
+
+	<script>
+	$(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	});
+	</script>
+<!-- end scroll top-->
+
 <!-- FOOTER -->
 <?php include 'footer.php' ?>

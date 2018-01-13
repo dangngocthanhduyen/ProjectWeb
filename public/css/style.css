@@ -5,12 +5,12 @@ body
 	position: relative;
 	/*background: url(http://localhost/PHP/Login/image/background.jpg) center top /cover fixed no-repeat;*/
 	width: 100%;
-	font-family: Myriad Pro!important;
+	font-family: Source Sans Pro!important;
 }
 /*viewport*/
 a,div,ul,li,h5,p,span,sub
 {
-	font-family: Myriad Pro!important;
+	font-family: Source Sans Pro!important;
 }
 .viewport
 {
@@ -49,7 +49,7 @@ a,div,ul,li,h5,p,span,sub
 }
 .nav-link:hover
 {
-	color: #F7A08F !important;
+	color: #04b1b4 !important;
 }
 .btn-outline-success
 {
@@ -58,9 +58,8 @@ a,div,ul,li,h5,p,span,sub
 }
 .btn-outline-success:hover
 {
-	color: white!important;
-	background-color:#F7A08F !important;
-
+	color: white !important;
+	background-color:#1ccacd !important;
 }
 /*header*/
 .fa-bars
@@ -114,15 +113,7 @@ a,div,ul,li,h5,p,span,sub
 }
 
 /*Icon */
-.btq-more {
-    position: absolute;
-    border: 1px solid #F7A08F;
-    top: 30%;
-    right: 35%;
-    padding: 17px;
-    border-radius: 50%;
-    background: #F7A08F;
-}
+
 [type="button"], [type="reset"], [type="submit"],[type="search"]{
 	-webkit-appearance: none!important;
 	margin: 0!important;
@@ -205,7 +196,7 @@ a,div,ul,li,h5,p,span,sub
 }
 .product-b
 {
-	border-top: 1px solid #F7A08F;
+	border-top: 1px solid #1ccacd;
 }
 .product-title , .prices-product 
 {
@@ -273,7 +264,7 @@ a,div,ul,li,h5,p,span,sub
 .title-product
 {
 	padding-top: 15px;
-	border-top: 1px solid #F7A08F;
+	border-top: 1px solid #1ccacd;
 	padding-bottom: 15px;
 }
 .event-product
@@ -485,7 +476,7 @@ ul
 }
 .footer
 {
-	border-top:1px solid #F7A08F;
+	border-top:1px solid #1ccacd;
 
 }
 
@@ -566,11 +557,6 @@ ul
 	padding-left:10% !important;
 }
 
-.button:hover, button:hover {
-    border: 1px solid #fe5252;
-    color: #fe5252;
-    text-decoration: none;
-}
 
 .bt-right
 {
@@ -585,7 +571,7 @@ ul
 	padding: 10px 10px;
     border-radius: 2px;
     color: #FFF;
-    background: #6aadf1;
+    background: #1ccacd !important; 
 	margin-bottom:10px;
 }
 a.btnRemoveAction{color:#D60202;border:0;padding:2px 10px;font-size:0.9em;}

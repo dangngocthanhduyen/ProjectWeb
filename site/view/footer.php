@@ -2,9 +2,15 @@
 			<!-- statar-footer -->
 			<div class="footer">
 				<img class="Logo2minFooter" src="/MVCFP/public/image/logo/logofooter.jpg">
-				<p class="TextFooter">Tòa BA1, Ký túc xá khu B, Đại học Quốc gia TPHCM</p>
-				<p class="TextFooter">01632533968 - 01685209913</p>
-				<p class="TextFooter">Mở cửa: 9.00AM - 9.00PM</p>
+				<p class="TextFooter">
+					<i class="fa fa-home" aria-hidden="true"></i>
+				Tòa BA1, Ký túc xá khu B, Đại học Quốc gia TPHCM</p>
+				<p class="TextFooter">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+				01632533968 - 01685209913</p>
+				<p class="TextFooter">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>
+				Mở cửa: 9.00AM - 9.00PM</p>
 
 				<div class="logofb_insta">
 					<a href="https://www.facebook.com/2mins-corner-1109281215839012/" title="Facebook"><img src="/MVCFP/public/image/logo/logo-fb.jpg" width="100px" height="100px"></a>

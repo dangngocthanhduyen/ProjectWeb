@@ -10,6 +10,10 @@
 	<link rel="stylesheet" type="text/css"  href="/MVCFP/public/css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css"  href="/MVCFP/public/css/owl.theme.default.min.css">
 	<link rel="stylesheet" type="text/css"  href="/MVCFP/public/css/style.css">	
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<!-- <link rel="stylesheet" type="text/css"  href="/MVCFP/public/css/docs.theme.min.css"> -->
 	<!-- 	<link href="https://maxcdn./MVCFP/public/csscdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
 	<script type="text/javascript"  src="/MVCFP/public/js/jquery-3.2.1.min.js" ></script>
@@ -34,7 +38,7 @@
 </head>
 <body>
 	<!-- Header task-bar -->
-	<div clas="header-all">
+	<div clas="header-all navbar">
 		<div class="navbar-top" style="position:fixed;">
 			<div class="container">
 				<nav class="navbar navbar-expand-lg ">
@@ -47,22 +51,42 @@
 
 					<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 						<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-							<li class="nav-item ">
+							<div class="nav-item ">
 								<a class="nav-link" href="/MVCFP/index.php">
 									&nbsp;HOME
 								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="/MVCFP/site/view/duongda.php">&nbsp;DƯỠNG DA</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="/MVCFP/site/view/mypham.php">&nbsp;MỸ PHẨM</a>
-							</li>
-							<li class="nav-item">
+							</div>
+
+							<div class="nav-item dropdown">
+								<a class="nav-link dropbtn" href="/MVCFP/site/view/duongda.php">&nbsp;DƯỠNG DA
+									<i class="fa fa-caret-down"></i>
+								</a>
+
+								<div class="dropdown-content">
+										<a href="/MVCFP/site/view/duongda.php">Làm sạch</a>
+										<a href="/MVCFP/site/view/duongda.php">Mặt nạ</a>
+										<a href="/MVCFP/site/view/duongda.php">Xịt khoáng</a>
+										<a href="/MVCFP/site/view/duongda.php">Chống nắng</a>
+								</div>
+							</div>
+
+
+							<div class="nav-item dropdown">
+								<a class="nav-link dropbtn" href="/MVCFP/site/view/trangdiem.php">&nbsp;TRANG ĐIỂM
+									<i class="fa fa-caret-down"></i>
+								</a>
+
+								<div class="dropdown-content">
+										<a href="/MVCFP/site/view/trangdiem.php">Trang điểm môi</a>
+										<a href="/MVCFP/site/view/trangdiem.php">Trang điểm mắt</a>
+								</div>
+							</div>
+
+							<div class="nav-item">
 								<a class="nav-link" href="/MVCFP/site/view/cart.php">
 									<i class="fa fa-shopping-cart" aria-hidden="true">&nbsp;</i>
 								</a>
-							</li>
+							</div>
 
 						</ul>
 						<form class="form-inline my-2 my-lg-0">
@@ -76,4 +100,6 @@
 			</div>
 		</div>
 	</div>
+
+
 	<!-- End header taskbar -->

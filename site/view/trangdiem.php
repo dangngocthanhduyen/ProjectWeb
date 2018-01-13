@@ -26,8 +26,8 @@ $total_row=$_config['total_record'];
 <div class="clearfix"></div>
 
 <!-- IMAGE -->
-<div class="HeadBackground" style="background:url(/MVCFP/public/image/banner/duongda.jpg) no-repeat center bottom;">
-	<h2>Mỹ Phẩm</h2>
+<div class="HeadBackground" style="background:url(/MVCFP/public/image/banner/trangdiem.jpg) no-repeat center top;">
+	<h2>Trang Điểm</h2>
 </div>
 
 
@@ -37,12 +37,12 @@ $total_row=$_config['total_record'];
 		<div class="row">
 			<div class="col-md-2 row-fix">
 				<div class="LeftProductList">
-					<h3><a class="HeadList"  >Mỹ Phẩm</a></h3>
+					<h3><a class="HeadList"  >Trang điểm</a></h3>
 					<ul class="List">
 
 						<li>
-							<a class="ListTitle">Trang điểm mặt (23)</a>
-							<ul>
+							<a class="ListTitle">Trang điểm môi</a>
+							<ul class="ListTitle1">
 								<?php foreach ($list as $item ) { ?>
 									<li>
 										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>"><?PHP ECHO $item['TenSP']?></a>
@@ -53,8 +53,8 @@ $total_row=$_config['total_record'];
 						</li>
 
 						<li>
-							<a class="ListTitle" ">Trang điểm mắt (15)</a>
-							<ul>
+							<a class="ListTitle" ">Trang điểm mắt</a>
+							<ul class="ListTitle1">
 								<?php foreach ($list as $item ) { ?>
 									<li>
 										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>"><?PHP ECHO $item['TenSP']?></a>
@@ -63,16 +63,7 @@ $total_row=$_config['total_record'];
 							</ul>
 						</li>
 
-						<li>
-							<a class="ListTitle" >Xịt khoáng (9)</a>
-							<ul>
-								<?php foreach ($list as $item ) { ?>
-									<li>
-										<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>"><?PHP ECHO $item['TenSP']?></a>
-									</li>
-								<?php }?>
-							</ul>
-						</li>
+						
 
 					</div>
 				</div>
@@ -84,10 +75,10 @@ $total_row=$_config['total_record'];
 
 							<div class="Sort">
 								<select class="Select" onchange="fnSort(this.value);">
-									<option value="1" selected="">Tổng Các Sản Phẩm</option>
-<!-- 									<option value="2">Sản phẩm hot</option>
-									<option value="4">Giá: từ thấp lên cao</option>
-									<option value="5">Giá: từ cao xuống thấp</option> -->
+									<!-- <option value="1" selected="">Tổng Các Sản Phẩm</option>
+									<option value="2">Sản phẩm hot</option> -->
+									<option value="1">Giá: từ thấp lên cao</option>
+									<option value="2">Giá: từ cao xuống thấp</option>
 								</select>
 							</div>
 						</div>
@@ -100,7 +91,7 @@ $total_row=$_config['total_record'];
 									<li class="col-md-4 col-sm-6 col-xs-12 ">
 
 										<div class="li-border">
-											<form method="post" action="mypham.php?action=add&name=<?php echo $item["TenSP"]; ?>">
+											<form method="post" action="trangdiem.php?action=add&name=<?php echo $item["TenSP"]; ?>">
 												<a href="/MVCFP/site/view/detail.php?id=<?php echo$item['ID']?>">
 													<div class="thumb img-responsive">
 														<img class="thumbnail" src="/MVCFP//<?=$item['Hinh']?>" style="width: 150px;height:150px;">
@@ -114,11 +105,13 @@ $total_row=$_config['total_record'];
 													</sup>
 												</div>
 												<div class="button_group">
-													<input type="text" name="quantity" value="1" size="2" />
-													<input type="submit" value="Add to cart" class="button">
-													<a class="button" href='https://www.facebook.com/2mins-corner-1109281215839012/' >
-														Liên Hệ Chi tiết.
+													<input type="text" name="quantity" value="1" class="btn btn-outline-success" size="2" >
+
+													<input type="submit" value="Add to cart" class="btn btn-outline-success">
+
+													<a class="btn btn-outline-success lienhechitiet" href='https://www.facebook.com/2mins-corner-1109281215839012/' >Liên Hệ Chi tiết
 													</a>
+
 												</form>
 											</div>
 										</div>
@@ -138,6 +131,30 @@ $total_row=$_config['total_record'];
 
 		</div>
 	</div>
+
+	<!-- scroll top-->
+	<button href="#" class="scrollToTop">Top</button>
+
+	<script>
+	$(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	});
+	</script>
+<!-- end scroll top-->
 
 	<!-- FOOTER -->
 	<?php include 'footer.php' ?>

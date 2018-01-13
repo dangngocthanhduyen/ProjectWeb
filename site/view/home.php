@@ -110,7 +110,7 @@ $discount=$home_Controller->homeDAction();
 									<a class="product-title product-bold"><?php echo $item["TenSP"]?></a>
 								</div> -->
 								<a href="site/view/detail.php?id=<?=$item1['ID']?>" type="button" role="button" class="my-Btn btq-more">
-									<i class="fa fa-search" aria-hidden="true"></i>
+									<i class="fa fa-heart" aria-hidden="true"></i>
 								</a>
 								<!-- <div class="text-title"><?php echo $item1["Gia"]?></div> -->
 							</div>
@@ -149,7 +149,7 @@ $discount=$home_Controller->homeDAction();
 									<a class="product-title product-bold"><?php echo $item["TenSP"]?></a>
 								</div> -->
 								<a href="site/view/detail.php?id=<?=$item1['ID']?>" type="button" role="button" class="my-Btn btq-more">
-									<i class="fa fa-search" aria-hidden="true"></i>
+									<i class="fa fa-instagram" aria-hidden="true"></i>
 								</a>
 								<!-- <div class="text-title"><?php echo $item1["Gia"]?></div> -->
 							</div>
@@ -164,4 +164,29 @@ $discount=$home_Controller->homeDAction();
 		</div>
 	</div>
 </div>
+
+<!-- scroll top-->
+	<button href="#" class="scrollToTop">Top</button>
+
+	<script>
+	$(document).ready(function(){
+	
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	});
+	</script>
+<!-- end scroll top-->
+
 <?php include "footer.php" ?>

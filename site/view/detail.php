@@ -18,7 +18,7 @@ $duongda_cart->get_Cart();
 							
 							<div class="preview_image">
 								<div>
-									<img src="http://localhost/MVCFP/<?=$item["Hinh"]?>" style="width:300px;height:300px;position: relative;
+									<img src="/MVCFP//<?=$item["Hinh"]?>" style="width:300px;height:300px;position: relative;
 									margin: 4%;">
 								</div>
 							</div>
@@ -62,9 +62,9 @@ $duongda_cart->get_Cart();
 									<div class="wided">
 										<div class="button_group">
 											<input type="text" name="quantity" value="1" size="2" />
-											<input type="submit" value="Add Cart" class="button">
-											<a class="button bt-right" href='https://www.facebook.com/2mins-corner-1109281215839012/' >
-												Liên Hệ Chi tiết.
+											<input type="submit" value="Add Cart" class="btn btn-outline-success ">
+											<a class="btn btn-outline-success" href='https://www.facebook.com/2mins-corner-1109281215839012/' >
+												Liên Hệ Chi tiết
 											</a>
 										</div>
 									</form>
