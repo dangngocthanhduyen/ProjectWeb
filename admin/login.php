@@ -25,10 +25,10 @@ include 'library/function.php';
 		if(isset($_POST["txtlogin"])){
 			
 			if(empty($_POST["txtname"])){
-				$error[]= "vui lòng nhập username";
+				$error[]= "Vui lòng nhập username";
 			}
 			if(empty($_POST["txtpass"])){
-				$error[]="vui lòng nhập PassWord";
+				$error[]="Vui lòng nhập PassWord";
 			}
 			$data=array(
 				"name"=>$_POST["txtname"],
@@ -40,7 +40,7 @@ include 'library/function.php';
 			$stmt->execute();
 			$countsql=$stmt->rowCount();
 			if($countsql<=0){
-				$error[]="tài khoản không tổn tại!";
+				$error[]="Tài khoản không tổn tại!";
 			}else{
 				$data_user=$stmt->fetch(PDO::FETCH_ASSOC);
 				$_SESSION["tk_user"]= $data_user["username"];

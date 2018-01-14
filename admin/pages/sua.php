@@ -126,7 +126,7 @@ if(!isset($_GET["id"])){
 								?>"></td>
 							</tr>
 							<tr>
-								<td>choose image:</td>
+								<td>Choose image:</td>
 								<td>
 									<input type="file" class="form-control " name="txtimage" onchange="viewAvatar(this)">
 									
@@ -146,7 +146,7 @@ if(!isset($_GET["id"])){
 								?></textarea></td>
 							</tr>
 							<tr>
-								<td colspan="2" align="center"><button type="submit" name="txtsua" class="btn btn-primary btn-lg">EDIT</button></td>
+								<td colspan="2" align="center"><button type="submit" name="txtsua" class="btn btn-primary btn-lg">Save</button></td>
 							</tr>
 
 						</table>
