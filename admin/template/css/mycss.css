@@ -10,6 +10,7 @@
 h1.func {
     text-align: center;
     margin-top: 29px;
+    margin-bottom: 29px;
 }
 
 table.table.table-bordered.table-dark {
@@ -57,7 +58,7 @@ a {}
 
 .menu-vertical {
     height: 100%;
-    background: yellowgreen;
+    background: #1ccacd;
 }
 
 th.head-sp {
@@ -77,6 +78,7 @@ button.btn.btn-primary.btn-lg {
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 45px;
+    margin-right: 155px;
 }
 
 input.form-control {
@@ -92,7 +94,14 @@ legend {
     margin-left: 36%;
     font-size: 28px;
     font-weight: 900;
-    color: #66668a;
+    color: #1ccacd;
+}
+.btn-primary{
+    background-color: #1ccacd;
+    border-color: #1ccacd;
+}
+.btn{
+    margin-left: 88px;
 }
 
 fieldset {
@@ -145,7 +154,7 @@ table.danhsach{
 .content {
     height: 300px;
     margin:  auto;
-    width: 440px;
+    width: 469px;
     display: table;
 }
 
@@ -160,8 +169,9 @@ table.danhsach{
 
 .tieude {
     height: 124px;
-    background-color: #F7A08F;
-    /*border-radius: 10px 10px 0px 0px;*/
+    background-color: #1ccacd;
+    /*border-radius: 10px 
+    10px 0px 0px;*/
     text-align: center;
     text-transform: uppercase;
     font-size: 35px;

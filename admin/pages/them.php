@@ -40,7 +40,7 @@ if(isset($_POST["txtthem"])){
 			exit();
 		}
 		else{
-			$errors[]="tên này đã tồn tại. Vui lòng nhập lại!";
+			$errors[]="Tên này đã tồn tại. Vui lòng nhập lại!";
 		}
 	}
 
@@ -89,7 +89,7 @@ if(isset($_POST["txtthem"])){
 							</tr>
 							<tr>
 								
-								<td>choose image:</td>
+								<td>Choose image:</td>
 								<td>
 									<input type="file" name="txtimage" class="form-control" onchange="viewAvatar(this)">
 									<div ><img class="show-img" src="" alt="" style="height: 100px; width: 100px;"></div>

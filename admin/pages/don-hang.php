@@ -72,9 +72,17 @@ if(empty($data)){
 </table>
 <?php echo $paging->html(); ?>
 <style>
-    .item-page{float:left; margin: 3px; border: solid 1px gray;}
+    .item-page{float:left; margin: 3px; }
     .item-link{padding: 5px;}
-    .item-span{display:inline-block; padding: 0px 3px; background: blue; color:white }
+    .item-span{display:inline-block; padding: 0px 3px; background: #1ccacd; color:white;
+    margin: 0 5px;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+     }
     ul.container-item {
     display: block;
     margin-left: 35%;
