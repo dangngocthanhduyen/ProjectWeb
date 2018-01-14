@@ -38,7 +38,7 @@
 					<a class="navbar-brand" href="/MVCFP/index.php">
 						<img src="/MVCFP/public/image/logo/fulllogoheader.png" style="width:160px;height:40px;" href="/MVCFP/index.php">
 					</a>
-					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler collapsed btn-he" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 
