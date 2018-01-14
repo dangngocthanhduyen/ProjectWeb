@@ -45,7 +45,7 @@ $duongda_cart->get_Cart();
 								<div class="price">
 									Price : 
 									<span class="new_price">
-										<?=$item["Gia"]?>
+										<?=number_format($item["Gia"],0,'',',');?>
 										<sup>
 											VND
 										</sup>
@@ -58,7 +58,7 @@ $duongda_cart->get_Cart();
 									</span> -->
 								</div>
 								<hr class="border">
-								<form method="post" action="detail.php?action=add&ID=<?php echo $item["ID"]; ?>">
+								<form method="post" action="detail.php?id=<?php echo $item["ID"]?>&action=add&name=<?php echo $item["TenSP"]; ?>">
 									<div class="wided">
 										<div class="button_group">
 											<input type="text" name="quantity" value="1" size="2" />
