@@ -24,13 +24,6 @@
 	<script type="text/javascript" src="/MVCFP/public/js/bootstrap.js"  ></script>
 	<script stype="text/javascript" src="/MVCFP/public/js/jquery-ui.js""></script>
 	<script src="https://use.fontawesome.com/9325ad171d.js"></script>
-	<script>
-		$(function() {
-			$( "#input-text" ).autocomplete({
-				source: '/MVCFP/site/config/search.php'
-			});
-		});
-	</script>
 	<title>Shop 2min_corner</title>
 	<link href="/MVCFP/public/image/logo/logoicon.ico" rel="icon">
 	<link href="/MVCFP/public/image/logoicon.ico" rel="icon">
@@ -89,12 +82,15 @@
 							</div>
 
 						</ul>
-						<form class="form-inline my-2 my-lg-0">
-							<div class="ui-widget">
+						<div>
+							<form class="form-inline my-2 my-lg-0">
 								<!-- <label for="input-text">Search: </label> -->
 								<input id="input-text" name="text" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+							</form>
+							<div class="quick-view">
+								
 							</div>
-						</form>
+						</div>
 					</div>
 				</nav>
 			</div>

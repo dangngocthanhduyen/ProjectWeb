@@ -692,3 +692,11 @@ tr
 {
 	padding-bottom: 30px;
 }
+.quick-view
+{
+	position: absolute;
+	width: 20%;
+	border: 1px solid white;
+	background: white;
+
+}

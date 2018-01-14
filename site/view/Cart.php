@@ -51,13 +51,19 @@ $duongda_cart->get_Cart();
 </div>
 <form method="POST" name="checkout" action="cart.php?action=checkout">
   <div class='form-input'>
-      Tên:      <input type="text" name="name" required="" oninvalid="this.setCustomValidity('Bạn Chưa Nhập Tên')" oninput="setCustomValidity('')"">
-      Địa chỉ:      <input type="text" name="address" required="" oninvalid="this.setCustomValidity('Bạn Chưa Nhập Địa Chỉ')"  oninput="setCustomValidity('')">      
-      SĐT:      <input type="number" name="phone" pattern="[0-9]*" required="" oninvalid="this.setCustomValidity('Bạn Chưa Nhập SDT')" oninput="setCustomValidity('')">
+    Tên:      <input type="text" name="name" required="" oninvalid="this.setCustomValidity('Bạn Chưa Nhập Tên')" oninput="setCustomValidity('')"">
+    Địa chỉ:      <input type="text" name="address" required="" oninvalid="this.setCustomValidity('Bạn Chưa Nhập Địa Chỉ')"  oninput="setCustomValidity('')">      
+    SĐT:      <input type="number" name="phone" pattern="[0-9]*" required="" oninvalid="this.setCustomValidity('Bạn Chưa Nhập SDT')" oninput="setCustomValidity('')">
   </div>
   <div class="checkout" >
-    <input type="submit" class="btn btn-outline-success " value="Thanh Toán"></a>
+    <input type="submit" id="pay-btn" class="btn btn-outline-success  " onclick="myFunction()" value="Thanh Toán"></a>
   </div>
+  <!-- <script>
+    function myFunction() {
+     alert("Bạn Đã Mua Hàng Thành Công");
+     header('Location:/MVCFP/index.php');
+   }
+ </script> -->
 </div>
 </form>
 </div>

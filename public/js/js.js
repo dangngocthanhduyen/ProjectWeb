@@ -36,7 +36,30 @@ $(document).ready(function()
 		}
 
 	});
-
+	$("#input-text").keyup(function()
+	{
+		var txt=$(this).val();
+		if(txt=='')
+		{
+			$(".quick-view").css('display','none');
+		}
+		else
+		{
+			$.ajax({
+				url:"/MVCFP/site/config/search.php",
+				type:"get",
+				data:{search:txt},
+				dataType:"text",
+				success:function(data){
+					$(".quick-view").html(data);
+					$(".quick-view").css("display","block");
+				}
+			});
+		}
+	});
+	$("#pay-btn").click(function(){
+		alert("Đã Mua Hàng Thành Công");
+	}); 
 });
 
 
