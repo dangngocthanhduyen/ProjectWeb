@@ -30,6 +30,7 @@ if(!isset($_GET["id"])){
 					"name" => $_POST["txtname"],
 					"price" => $_POST["txtprice"],
 					"intro" =>$_POST["txtintro"],
+					"rate" =>$_POST["txtnumber"],
 					"picture" => $_FILES["txtimage"]["name"],	
 					"created_at"=> time()
 				);
@@ -39,11 +40,12 @@ if(!isset($_GET["id"])){
 				$count=$check->rowCount();
 				if($count == 0){
 
-					$smmt=$conn->prepare("UPDATE `chitietsp` SET TenSP= :name, Gia= :price, Mota= :intro,created_at = :created_at, Hinh= :picture WHERE ID = :id");
+					$smmt=$conn->prepare("UPDATE `chitietsp` SET TenSP= :name, Gia= :price, Mota= :intro,Noibat= :rate,created_at = :created_at, Hinh= :picture WHERE ID = :id");
 					$smmt->bindParam(":id",$id,PDO::PARAM_INT);
 					$smmt->bindParam(":name",$data["name"],PDO::PARAM_STR);
 					$smmt->bindParam(":price",$data["price"],PDO::PARAM_INT);
 					$smmt->bindParam(":intro",$data["intro"],PDO::PARAM_STR);
+					$smmt->bindParam(":rate",$data["rate"],PDO::PARAM_STR);
 					$smmt->bindParam(":picture",$data["picture"],PDO::PARAM_STR);
 					$smmt->bindParam(":created_at",$data["created_at"],PDO::PARAM_INT);
 					$smmt->execute();
@@ -97,7 +99,7 @@ if(!isset($_GET["id"])){
 				</tr>
 				<tr>
 					<td>Price:</td>
-					<td><input type="text" class="form-control" name="txtprice" value= "<?php if(isset($_POST["txtprice"])){
+					<td><input type="text" class="form-control" min=5 max=15 name="txtprice" value= "<?php if(isset($_POST["txtprice"])){
 						echo $_POST['txtprice'];}
 						else{
 							echo $data_fetch['Gia'];
@@ -107,7 +109,7 @@ if(!isset($_GET["id"])){
 					</tr>
 					<tr>
 						<td>Loại Sp:</td>
-						<td><input type="number" class="form-control" name="txtnumberSp" value= "<?php if(isset($_POST["txtnumberSp"])){
+						<td><input type="number" class="form-control" min=1 max=2 name="txtnumberSp" value= "<?php if(isset($_POST["txtnumberSp"])){
 							echo $_POST['txtnumberSp'];}
 							else{
 								echo $data_fetch['IDSP'];
@@ -117,7 +119,7 @@ if(!isset($_GET["id"])){
 						</tr>
 						<tr>
 							<td>Nổi bật:</td>
-							<td><input type="number" class="form-control" name="txtnumber" value= "<?php if(isset($_POST["txtnumber"])){
+							<td><input type="number" class="form-control" min=0 max=2 name="txtnumber" value= "<?php if(isset($_POST["txtnumber"])){
 								echo $_POST['txtnumber'];}
 								else{
 									echo $data_fetch['Noibat'];

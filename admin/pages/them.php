@@ -14,6 +14,7 @@ if(isset($_POST["txtthem"])){
 	if(empty($errors)){
 
 		$data =array(
+			"idsp" => $_POST["txtnumberSp"],
 			"name" => $_POST["txtname"],
 			"price" => $_POST["txtprice"],
 			"rate" =>$_POST["txtnumber"],
@@ -27,7 +28,8 @@ if(isset($_POST["txtthem"])){
 		$count=$check->rowCount();
 		if($count == 0){
 
-			$smmt=$conn->prepare("INSERT INTO `chitietsp`(`TenSP`, `Gia`,`Noibat`, `Mota`, `Hinh`, `created_at`) VALUES (:name, :price,:rate, :intro, :picture, :created_at)");
+			$smmt=$conn->prepare("INSERT INTO `chitietsp`(`IDSP`,`TenSP`, `Gia`,`Noibat`, `Mota`, `Hinh`, `created_at`) VALUES (:idsp,:name, :price,:rate, :intro, :picture, :created_at)");
+			$smmt->bindParam(":idsp",$data["idsp"],PDO::PARAM_STR);
 			$smmt->bindParam(":name",$data["name"],PDO::PARAM_STR);
 			$smmt->bindParam(":price",$data["price"],PDO::PARAM_INT);
 			$smmt->bindParam(":rate",$data["rate"],PDO::PARAM_INT);
@@ -79,12 +81,12 @@ if(isset($_POST["txtthem"])){
 					</tr>
 					<tr>
 						<td>Loại Sp:</td>
-						<td><input type="number" name="txtnumberSp" value= "<?php if(isset($_POST["txtnumberSp"])){
+						<td><input type="number" name="txtnumberSp" required="" min=1 max=2 length=1 value= "<?php if(isset($_POST["txtnumberSp"])){
 							echo $_POST['txtnumberSp'];}?>"  class="form-control"></td>
 						</tr>
 						<tr>
 							<td>Nổi bật:</td>
-							<td><input type="number" name="txtnumber" value= "<?php if(isset($_POST["txtnumber"])){
+							<td><input type="number" name="txtnumber" required="" min=0 max=2 value= "<?php if(isset($_POST["txtnumber"])){
 								echo $_POST['txtnumber'];}?>"  class="form-control"></td>
 							</tr>
 							<tr>
